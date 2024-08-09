@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://ce0wm4o0ayrj0"]
+
+[ext_resource type="Script" path="res://Scripts/testworld.gd" id="1_d0ki8"]
+[ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="1_edl3t"]
+[ext_resource type="Script" path="res://Scripts/winnode.gd" id="2_gptlr"]
+[ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://icon.svg" id="2_tttnl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g34co"]
+radius = 173.934
+
+[sub_resource type="TileSet" id="TileSet_1v1fg"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_d0ki8")
+
+[node name="playernode" parent="." instance=ExtResource("1_edl3t")]
+position = Vector2(256, 157)
+
+[node name="Camera2D" type="Camera2D" parent="playernode"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="playernode/Camera2D"]
+
+[node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 57.0
+offset_top = 965.0
+offset_right = 1593.0
+offset_bottom = 1020.0
+theme_override_font_sizes/font_size = 40
+text = "You were always told that life is a maze sometimes and the goal is to get the exit"
+
+[node name="winnode" type="Node2D" parent="."]
+script = ExtResource("2_gptlr")
+
+[node name="Area2D" type="Area2D" parent="winnode"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="winnode/Area2D"]
+shape = SubResource("CircleShape2D_g34co")
+
+[node name="Sprite2D" type="Sprite2D" parent="winnode/Area2D"]
+scale = Vector2(1, 2.375)
+texture = ExtResource("2_tttnl")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_1v1fg")
+format = 2
+
+[connection signal="body_entered" from="winnode/Area2D" to="winnode" method="_on_area_2d_body_entered"]
