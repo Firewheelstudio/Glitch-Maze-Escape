@@ -1,0 +1,1 @@
+Main point to the narrative is the hero/player feels trapped in this maze and they're finding out things are falling apart and it's glitching. They're being chased and they're feeling like they're trying to escape.
