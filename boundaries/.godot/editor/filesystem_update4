@@ -1,10 +1,9 @@
-res://Scenes/level_1.tscn
-res://Scripts/CanvasLayer.gd
 res://Scenes/dungeon_tilemap.tscn
+res://Scenes/level_1.tscn
 res://Scripts/Textvanishnigtimer.tscn
 res://Scenes/winnode.tscn
 res://Scenes/level_2.tscn
-res://Scripts/player.gd
 res://Scenes/easy_win_screen.tscn
-res://Scripts/nextscenechanger.gd
-res://Scripts/winnode.gd
+res://Scenes/level_3.tscn
+res://Scripts/CanvasLayer.gd
+res://Scripts/player.gd

@@ -27,19 +27,23 @@ position = Vector2(-180, 403)
 script = ExtResource("6_615l3")
 
 [node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 57.0
-offset_top = 965.0
-offset_right = 1593.0
-offset_bottom = 1020.0
+offset_left = 195.0
+offset_top = 434.0
+offset_right = 1731.0
+offset_bottom = 489.0
 theme_override_font_sizes/font_size = 40
 text = "You were always told that life is a maze sometimes and the goal is to get the exit"
+
+[node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 776.0
+offset_top = 749.0
+offset_right = 1073.0
+offset_bottom = 862.0
+theme_override_font_sizes/font_size = 40
+text = "ok"
 
 [node name="Timer" parent="." instance=ExtResource("6_fpi2o")]
 
 [node name="winnodwchecker" parent="." instance=ExtResource("7_31rjf")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Button" type="Button" parent="CanvasLayer"]
-offset_right = 8.0
-offset_bottom = 8.0
+[connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
