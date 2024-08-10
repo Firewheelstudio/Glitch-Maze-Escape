@@ -1,4 +1,7 @@
 Button
+CanvasLayer
+Node2D
+Timer
 Label
 Area2D
 Control

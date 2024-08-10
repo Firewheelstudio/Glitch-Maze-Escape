@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhgc5nnhm3ptc"]
+
+[ext_resource type="Script" path="res://Scripts/nextscenechanger.gd" id="1_ly8cb"]
+
+[node name="winnodwchecker" type="Node2D"]
+script = ExtResource("1_ly8cb")

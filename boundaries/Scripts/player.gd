@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var speed = 500
+var speed = 800
 var accel = 1500
 func _process(delta):
 	var x_axis = Input.get_axis("move_left", "move_right")
