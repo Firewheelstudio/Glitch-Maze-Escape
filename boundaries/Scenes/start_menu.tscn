@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://y7cwwidkkyqj"]
+
+[ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_cwyjk"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cwyjk")
+
+[node name="MenuBar" type="MenuBar" parent="."]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 200.0
+offset_right = 335.0
+offset_bottom = 240.0
+
+[node name="StartButton" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.006
+anchor_bottom = 12.606
+offset_left = 271.0
+offset_top = 207.0
+offset_right = -753.24
+offset_bottom = -238.24
+text = "Play the Game"
+
+[node name="CloseButton" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.006
+anchor_bottom = 12.606
+offset_left = 761.0
+offset_top = 212.0
+offset_right = -263.24
+offset_bottom = -233.24
+text = "Exit"
+
+[node name="CreditsButton" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.006
+anchor_bottom = 12.606
+offset_left = 529.0
+offset_top = 213.0
+offset_right = -495.24
+offset_bottom = -232.24
+text = "credits"
+
+[connection signal="pressed" from="MenuBar/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MenuBar/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="MenuBar/CreditsButton" to="." method="_on_credits_button_pressed"]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcske03jqcvk0"]
+
+[ext_resource type="Script" path="res://Scripts/Hard_win_screen.gd" id="1_aoukx"]
+
+[node name="Hard_win_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aoukx")
+
+[node name="EndButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 913.0
+offset_top = 518.0
+offset_right = 1115.0
+offset_bottom = 592.0
+text = "End"
+
+[node name="TitleButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 577.0
+offset_top = 518.0
+offset_right = 737.0
+offset_bottom = 582.0
+text = "Back to title"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 611.0
+offset_top = 336.0
+offset_right = 1280.0
+offset_bottom = 359.0
+text = "You made it out of the greenhouse and into the server room. now everything is on fire."
+
+[connection signal="pressed" from="EndButton" to="." method="_on_end_button_pressed"]
+[connection signal="pressed" from="TitleButton" to="." method="_on_title_button_pressed"]
