@@ -1,10 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://c2q03f6t7fq5e"]
 
 [ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="1_edl3t"]
-[ext_resource type="Texture2D" uid="uid://cymu72is0wcxq" path="res://sprites and tiles/Dungeon tileset.png" id="1_ua07v"]
+[ext_resource type="Texture2D" uid="uid://cymu72is0wcxq" path="res://sprites and tiles/Tilesets/Dungeon tileset.png" id="1_ua07v"]
 [ext_resource type="Script" path="res://Scripts/winnode.gd" id="2_gptlr"]
 [ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="3_yobl2"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="5_ove58"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7hm1n"]
 texture = ExtResource("1_ua07v")

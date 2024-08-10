@@ -6,3 +6,4 @@ func _process(delta):
 		$"../winnode".file = nextscenes[0]
 	if $"..".name == "level2":
 		$"../winnode".file = nextscenes[1]
+	

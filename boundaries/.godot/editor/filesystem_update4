@@ -5,5 +5,7 @@ res://Scenes/winnode.tscn
 res://Scenes/level_2.tscn
 res://Scenes/easy_win_screen.tscn
 res://Scenes/level_3.tscn
-res://Scripts/CanvasLayer.gd
-res://Scripts/player.gd
+res://Scenes/level_4.tscn
+res://Scripts/nextscenechanger.gd
+res://Scripts/winnode.gd
+res://Scenes/Textvanishnigtimer.tscn

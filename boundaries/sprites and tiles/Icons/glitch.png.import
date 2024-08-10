@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cymu72is0wcxq"
-path="res://.godot/imported/Dungeon tileset.png-c35d295ee373799b077e9558cb85c9a0.ctex"
+uid="uid://3ahi2cigomeo"
+path="res://.godot/imported/glitch.png-33fb120455efe9164f6e215c2c1f7979.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites and tiles/Dungeon tileset.png"
-dest_files=["res://.godot/imported/Dungeon tileset.png-c35d295ee373799b077e9558cb85c9a0.ctex"]
+source_file="res://sprites and tiles/Icons/glitch.png"
+dest_files=["res://.godot/imported/glitch.png-33fb120455efe9164f6e215c2c1f7979.ctex"]
 
 [params]
 
