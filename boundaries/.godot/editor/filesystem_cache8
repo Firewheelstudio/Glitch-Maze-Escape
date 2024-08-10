@@ -1,34 +1,35 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723302898
-::res://Scenes/::1723288757
-credit_screen.tscn::PackedScene::2855639837089749969::1723275477::0::1::::<><>::res://Scripts/credit_screen.gd
-dungeon_tilemap.tscn::PackedScene::3975265519706147256::1723288756::0::1::::<><>::uid://cymu72is0wcxq::::res://sprites and tiles/Dungeon tileset.png
-easy_win_screen.tscn::PackedScene::5762910894447581338::1723288757::0::1::::<><>::res://Scripts/win_screen.gd
-hard_win_screen.tscn::PackedScene::7337414207800408817::1723275477::0::1::::<><>::res://Scripts/Hard_win_screen.gd
-level_1.tscn::PackedScene::5106564935098811887::1723288756::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>uid://c0cqod28lbemx::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://dys0qeupo4xym::::res://Scripts/Textvanishnigtimer.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn
-level_2.tscn::PackedScene::288748753192567373::1723288757::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn
-level_3.tscn::PackedScene::3523055072999065678::1723275477::0::1::::<><>::res://Scripts/level.gd<>uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/easy_winnode lvl 3.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn
-lose_screen.tscn::PackedScene::2570441732012501036::1723275477::0::1::::<><>::res://Scripts/lose_screen.gd
-player.tscn::PackedScene::6532687887637945943::1723275477::0::1::::<><>::uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/player.gd
-start_menu.tscn::PackedScene::1750754224916360153::1723275477::0::1::::<><>::res://Scripts/start_menu.gd
-testworld.tscn::PackedScene::6702538428138471048::1723275865::0::1::::<><>::uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://cymu72is0wcxq::::res://sprites and tiles/Dungeon tileset.png<>res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn
-winnode.tscn::PackedScene::8167021647591107131::1723288756::0::1::::<><>::res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg
-winnodwchecker.tscn::PackedScene::2890304566707577988::1723288685::0::1::::<><>::res://Scripts/nextscenechanger.gd
-::res://Scripts/::1723288756
-CanvasLayer.gd::GDScript::-1::1723285935::0::1::::<>CanvasLayer<>::
-credit_screen.gd::GDScript::-1::1723275477::0::1::::<>Node2D<>::
-easy_winnode lvl 3.gd::GDScript::-1::1723275477::0::1::::<>Node2D<>::
-Hard_win_screen.gd::GDScript::-1::1723275477::0::1::::<>Control<>::
-level.gd::GDScript::-1::1723275477::0::1::::<>Node2D<>::
-lose_screen.gd::GDScript::-1::1723275477::0::1::::<>Control<>::
-nextscenechanger.gd::GDScript::-1::1723288756::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1723286360::0::1::::<>CharacterBody2D<>::
-start_menu.gd::GDScript::-1::1723275477::0::1::::<>Control<>::
-Textvanishnigtimer.gd::GDScript::-1::1723285922::0::1::::<>Timer<>::
-Textvanishnigtimer.tscn::PackedScene::8882499837177692480::1723288756::0::1::::<><>::res://Scripts/Textvanishnigtimer.gd
-winnode.gd::GDScript::-1::1723286659::0::1::::<>Node2D<>::
-winnode_lvl_2.gd::GDScript::-1::1723275477::0::1::::<>Node2D<>::
-win_screen.gd::GDScript::-1::1723275477::0::1::::<>Control<>::
-::res://sprites and tiles/::1723275477
-Dungeon tileset.png::CompressedTexture2D::6483419064348985638::1723275477::1723275477::1::::<><>::
-icon.svg::CompressedTexture2D::4439621496095052639::1723275477::1723275477::1::::<><>::
+::res://::1723318571
+::res://Scenes/::1723318535
+CanvasLayer.gd::GDScript::-1::1723318535::0::1::::<>CanvasLayer<>::
+credit_screen.tscn::PackedScene::2855639837089749969::1723318535::0::1::::<><>::res://Scripts/credit_screen.gd
+dungeon_tilemap.tscn::PackedScene::3975265519706147256::1723318535::0::1::::<><>::uid://cymu72is0wcxq::::res://sprites and tiles/Dungeon tileset.png
+easy_win_screen.tscn::PackedScene::5762910894447581338::1723318535::0::1::::<><>::res://Scripts/win_screen.gd
+hard_win_screen.tscn::PackedScene::7337414207800408817::1723318535::0::1::::<><>::res://Scripts/Hard_win_screen.gd
+level_1.tscn::PackedScene::5106564935098811887::1723318535::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>uid://c0cqod28lbemx::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://dys0qeupo4xym::::res://Scripts/Textvanishnigtimer.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn
+level_2.tscn::PackedScene::288748753192567373::1723318535::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>res://Scripts/CanvasLayer.gd<>uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn
+level_3.tscn::PackedScene::3523055072999065678::1723318535::0::1::::<><>::res://Scripts/level.gd<>uid://c0cqod28lbemx::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/easy_winnode lvl 3.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn
+lose_screen.tscn::PackedScene::2570441732012501036::1723318535::0::1::::<><>::res://Scripts/lose_screen.gd
+player.tscn::PackedScene::6532687887637945943::1723318535::0::1::::<><>::uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/player.gd
+start_menu.tscn::PackedScene::1750754224916360153::1723318535::0::1::::<><>::res://Scripts/start_menu.gd
+testworld.tscn::PackedScene::6702538428138471048::1723318535::0::1::::<><>::uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://cymu72is0wcxq::::res://sprites and tiles/Dungeon tileset.png<>res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn
+winnode.tscn::PackedScene::8167021647591107131::1723318535::0::1::::<><>::res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg
+winnodwchecker.tscn::PackedScene::2890304566707577988::1723318535::0::1::::<><>::res://Scripts/nextscenechanger.gd
+::res://Scripts/::1723318535
+CanvasLayer.gd::GDScript::-1::1723318535::0::1::::<>CanvasLayer<>::
+credit_screen.gd::GDScript::-1::1723318535::0::1::::<>Node2D<>::
+easy_winnode lvl 3.gd::GDScript::-1::1723318535::0::1::::<>Node2D<>::
+Hard_win_screen.gd::GDScript::-1::1723318535::0::1::::<>Control<>::
+level.gd::GDScript::-1::1723318535::0::1::::<>Node2D<>::
+lose_screen.gd::GDScript::-1::1723318535::0::1::::<>Control<>::
+nextscenechanger.gd::GDScript::-1::1723318535::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1723318535::0::1::::<>CharacterBody2D<>::
+start_menu.gd::GDScript::-1::1723318535::0::1::::<>Control<>::
+Textvanishnigtimer.gd::GDScript::-1::1723318535::0::1::::<>Timer<>::
+Textvanishnigtimer.tscn::PackedScene::8882499837177692480::1723318535::0::1::::<><>::res://Scripts/Textvanishnigtimer.gd
+winnode.gd::GDScript::-1::1723318535::0::1::::<>Node2D<>::
+winnode_lvl_2.gd::GDScript::-1::1723318535::0::1::::<>Node2D<>::
+win_screen.gd::GDScript::-1::1723318535::0::1::::<>Control<>::
+::res://sprites and tiles/::1723318535
+Dungeon tileset.png::CompressedTexture2D::6483419064348985638::1723318535::1723318535::1::::<><>::
+icon.svg::CompressedTexture2D::4439621496095052639::1723318535::1723318535::1::::<><>::
