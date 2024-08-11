@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://o0cba7b2chn3"]
+
+[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/glitch overlay/Glitched overlay 2.png" id="1_xyqrc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_55jdv"]
+radius = 80.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v28b6"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(0, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8al1"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(370, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2kxh"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(740, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bict"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(0, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mldko"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(370, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lm0dn"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(740, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w31hh"]
+atlas = ExtResource("1_xyqrc")
+region = Rect2(0, 696, 370, 348)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4sfa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v28b6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8al1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2kxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bict")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mldko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lm0dn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w31hh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="portal_exit" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_55jdv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_f4sfa")

@@ -23,22 +23,29 @@ position = Vector2(-112, 369)
 script = ExtResource("4_fw3mc")
 
 [node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 60.0
-offset_top = 434.0
-offset_right = 1811.0
-offset_bottom = 489.0
+offset_left = -198.0
+offset_top = 436.0
+offset_right = 1553.0
+offset_bottom = 491.0
 theme_override_font_sizes/font_size = 40
-text = "You were told that if you just stick to the right wall in your life, you'll eventually find the exit
+text = "if you just stick to the right wall, you'll eventually find the exit
 "
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 776.0
-offset_top = 749.0
-offset_right = 1073.0
-offset_bottom = 862.0
+offset_left = 772.0
+offset_top = 569.0
+offset_right = 1069.0
+offset_bottom = 682.0
 theme_override_font_sizes/font_size = 40
 text = "ok"
+
+[node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 244.0
+offset_top = 466.0
+offset_right = 2016.0
+offset_bottom = 579.0
+theme_override_font_sizes/font_size = 40
 
 [node name="winnode" parent="." instance=ExtResource("4_0h2wf")]
 position = Vector2(2967, 873)

@@ -31,3 +31,8 @@ func _process(delta):
 #		velocity += (input * accel * delta)
 #		velocity = velocity.limit_length(speed)
 	move_and_slide()
+
+
+func _on_portal_entrance_portal_entered():
+	print("entered Portal")
+	position = $"../portal_exit".position # Replace with function body.

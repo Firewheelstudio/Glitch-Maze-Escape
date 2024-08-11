@@ -86,21 +86,28 @@ position = Vector2(677, 673)
 script = ExtResource("4_6pqmu")
 
 [node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 274.0
-offset_top = 434.0
-offset_right = 1810.0
-offset_bottom = 547.0
+offset_left = 244.0
+offset_top = 466.0
+offset_right = 2016.0
+offset_bottom = 579.0
 theme_override_font_sizes/font_size = 40
-text = "But what if we didn't always have to do what was right? What if you could
-choose the path that was left for you?"
+text = "What if we didn't always do what was right?"
 
 [node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 776.0
-offset_top = 749.0
-offset_right = 1073.0
-offset_bottom = 862.0
+offset_left = 791.0
+offset_top = 310.0
+offset_right = 1088.0
+offset_bottom = 423.0
 theme_override_font_sizes/font_size = 40
 text = "ok"
+
+[node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 236.0
+offset_top = 549.0
+offset_right = 2008.0
+offset_bottom = 662.0
+theme_override_font_sizes/font_size = 40
+text = "What if you chose the path that was left for you?"
 
 [node name="easy_winnode" type="Node2D" parent="."]
 position = Vector2(3099, 1019)
@@ -134,14 +141,14 @@ texture = ExtResource("4_aqkhn")
 
 [node name="winnodwchecker" parent="." instance=ExtResource("8_gss23")]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Glitched_wall_overlay" type="AnimatedSprite2D" parent="."]
 position = Vector2(2060, 637)
 scale = Vector2(0.758621, 0.758621)
 sprite_frames = SubResource("SpriteFrames_e7lbe")
 animation = &"glitch"
 autoplay = "glitch"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+[node name="Glitched_door_overlay" type="AnimatedSprite2D" parent="."]
 position = Vector2(3327.68, -510)
 scale = Vector2(1.02874, 1.02874)
 sprite_frames = SubResource("SpriteFrames_e7lbe")

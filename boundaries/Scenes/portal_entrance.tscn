@@ -1,0 +1,77 @@
+[gd_scene load_steps=12 format=3 uid="uid://5kce1uniqhvi"]
+
+[ext_resource type="Script" path="res://Scripts/Portal_entrance.gd" id="1_pegpw"]
+[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/glitch overlay/Glitched overlay 2.png" id="2_jg7q1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mvyfq"]
+radius = 80.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v28b6"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(0, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8al1"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(370, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2kxh"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(740, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bict"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(0, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mldko"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(370, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lm0dn"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(740, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w31hh"]
+atlas = ExtResource("2_jg7q1")
+region = Rect2(0, 696, 370, 348)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uqfmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v28b6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8al1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2kxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bict")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mldko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lm0dn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w31hh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Portal_entrance" type="Node2D"]
+script = ExtResource("1_pegpw")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_mvyfq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_uqfmw")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

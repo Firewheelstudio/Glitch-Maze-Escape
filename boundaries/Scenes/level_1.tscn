@@ -31,15 +31,22 @@ offset_top = 434.0
 offset_right = 1731.0
 offset_bottom = 489.0
 theme_override_font_sizes/font_size = 40
-text = "You were always told that life is a maze sometimes and the goal is to get the exit"
+text = "sometimes, life is a maze and the goal is to get the exit"
 
 [node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 776.0
-offset_top = 749.0
-offset_right = 1073.0
-offset_bottom = 862.0
+offset_left = 778.0
+offset_top = 517.0
+offset_right = 1075.0
+offset_bottom = 630.0
 theme_override_font_sizes/font_size = 40
 text = "ok"
+
+[node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = -22.0
+offset_top = 508.0
+offset_right = 1750.0
+offset_bottom = 621.0
+theme_override_font_sizes/font_size = 40
 
 [node name="Timer" parent="." instance=ExtResource("6_fpi2o")]
 
