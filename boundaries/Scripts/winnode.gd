@@ -1,5 +1,5 @@
 extends Node2D
-var file
+var file #this variable is modified by nextscenechanger.gd
 func _ready():
 	pass
 

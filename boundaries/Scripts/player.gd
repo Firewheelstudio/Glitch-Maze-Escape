@@ -10,26 +10,26 @@ func _process(delta):
 	if canmove == true:
 		position += input * speed * delta
 		
-	if x_axis > 0 && canmove:
-		$AnimatedSprite2D.play("side_walk")
-		$AnimatedSprite2D.flip_h = false;
-	if x_axis < 0 && canmove:
-		$AnimatedSprite2D.play("side_walk")
-		$AnimatedSprite2D.flip_h = true;
-	if x_axis == 0 && $AnimatedSprite2D.animation == "side_walk":
-		$AnimatedSprite2D.play("side_idle")
+	if canmove:
+		if x_axis > 0:
+			$AnimatedSprite2D.play("side_walk")
+			$AnimatedSprite2D.flip_h = false;
+		if x_axis < 0:
+			$AnimatedSprite2D.play("side_walk")
+			$AnimatedSprite2D.flip_h = true;
+		if x_axis == 0:
+			if y_axis > 0:
+				$AnimatedSprite2D.play("front_walk")
+			if y_axis < 0:
+				$AnimatedSprite2D.play("back_walk")
+			if $AnimatedSprite2D.animation == "side_walk":
+				$AnimatedSprite2D.play("side_idle")
 		
-	if y_axis > 0 && x_axis == 0 && canmove:
-		$AnimatedSprite2D.play("front_walk")
-		
-	if y_axis == 0 && $AnimatedSprite2D.animation == "front_walk":
-		$AnimatedSprite2D.play("front_idle")
-		
-	if y_axis < 0 && x_axis == 0 && canmove:
-		$AnimatedSprite2D.play("back_walk")
-		
-	if y_axis == 0 && $AnimatedSprite2D.animation == "back_walk":
-		$AnimatedSprite2D.play("back idle")
+		if y_axis == 0:
+				if $AnimatedSprite2D.animation == "front_walk":
+					$AnimatedSprite2D.play("front_idle")
+				if $AnimatedSprite2D.animation == "back_walk":
+					$AnimatedSprite2D.play("back idle")
 #	if input == Vector2.ZERO:
 #		velocity = Vector2.ZERO
 #	else:
@@ -39,5 +39,8 @@ func _process(delta):
 
 
 func _on_portal_entrance_portal_entered():
-	print("entered Portal")
 	position = $"../portal_exit".position # Replace with function body.
+
+
+func _on_enemy_node_captured_player():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.

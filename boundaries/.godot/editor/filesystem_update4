@@ -7,4 +7,8 @@ res://Scenes/player.tscn
 res://Scenes/dungeon_tilemap.tscn
 res://Scenes/portal_entrance.tscn
 res://Scenes/portal_exit.tscn
+res://Scripts/winnode.gd
+res://Scenes/winnode.tscn
+res://enemy_node.gd
 res://Scripts/player.gd
+res://Scenes/enemy_node.tscn

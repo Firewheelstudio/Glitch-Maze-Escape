@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var nextscenes = ["res://Scenes/level_2.tscn", "res://Scenes/level_3.tscn", "res://Scenes/level_4.tscn", "res://Scripts/Hard_win_screen.gd"]
+@export var nextscenes = ["res://Scenes/level_2.tscn", "res://Scenes/level_3.tscn", "res://Scenes/level_4.tscn", "res://Scenes/hard_win_screen.tscn"]
 func _process(delta):
 	match $"..".name:
 		"level1":
