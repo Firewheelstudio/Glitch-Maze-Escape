@@ -99,6 +99,7 @@ position = Vector2(1404, -1266)
 position = Vector2(2063, -575)
 
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
+[connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="enemy_node" method="_on_button_button_down"]
 [connection signal="body_entered" from="easy_winnode lvl 3/Area2D" to="easy_winnode lvl 3" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="winnode/Area2D" to="winnode" method="_on_area_2d_body_entered"]
 [connection signal="portal_entered" from="Portal_entrance" to="playernode" method="_on_portal_entrance_portal_entered"]

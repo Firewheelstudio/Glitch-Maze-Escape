@@ -6,3 +6,4 @@ func _on_button_button_down():
 	$Button.hide()
 	$Label2.hide()
 	$"../..".canmove = true
+	

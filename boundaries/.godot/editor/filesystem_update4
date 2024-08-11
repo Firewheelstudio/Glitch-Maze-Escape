@@ -1,5 +1,6 @@
 res://Scenes/level_1.tscn
 res://Scripts/nextscenechanger.gd
+res://enemy_node.gd
 res://Scenes/level_2.tscn
 res://Scenes/level_3.tscn
 res://Scenes/level_4.tscn
@@ -7,8 +8,6 @@ res://Scenes/player.tscn
 res://Scenes/dungeon_tilemap.tscn
 res://Scenes/portal_entrance.tscn
 res://Scenes/portal_exit.tscn
-res://Scripts/winnode.gd
 res://Scenes/winnode.tscn
-res://enemy_node.gd
-res://Scripts/player.gd
 res://Scenes/enemy_node.tscn
+res://Scripts/CanvasLayer.gd
