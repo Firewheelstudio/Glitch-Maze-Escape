@@ -1,5 +1,8 @@
-res://Scenes/level_3.tscn
-res://Scripts/nextscenechanger.gd
-res://Scenes/level_4.tscn
 res://Scenes/level_1.tscn
+res://Scripts/nextscenechanger.gd
 res://Scenes/level_2.tscn
+res://Scenes/level_3.tscn
+res://Scenes/level_4.tscn
+res://Scenes/player.tscn
+res://Scripts/player.gd
+res://Scenes/dungeon_tilemap.tscn

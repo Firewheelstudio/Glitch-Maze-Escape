@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bqgug45jsb1io"]
+[gd_scene load_steps=19 format=3 uid="uid://bqgug45jsb1io"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_i0q0v"]
 [ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="2_n0vk6"]
@@ -8,9 +8,67 @@
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="6_0tyuo"]
 [ext_resource type="Script" path="res://Scripts/winnode.gd" id="7_3oty0"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="8_gss23"]
+[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/glitch overlay/Glitched overlay 2.png" id="9_gqolt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_82cxc"]
 size = Vector2(491.5, 377)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xona5"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(0, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4r2y"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(370, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67c6r"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(740, 0, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qk2fp"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(0, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4lmyr"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(370, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcfiu"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(740, 348, 370, 348)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i43kt"]
+atlas = ExtResource("9_gqolt")
+region = Rect2(0, 696, 370, 348)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e7lbe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xona5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4r2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67c6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qk2fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4lmyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcfiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i43kt")
+}],
+"loop": true,
+"name": &"glitch",
+"speed": 12.0
+}]
 
 [node name="level3" type="Node2D"]
 script = ExtResource("1_i0q0v")
@@ -75,6 +133,20 @@ scale = Vector2(3.92188, 2.375)
 texture = ExtResource("4_aqkhn")
 
 [node name="winnodwchecker" parent="." instance=ExtResource("8_gss23")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2060, 637)
+scale = Vector2(0.758621, 0.758621)
+sprite_frames = SubResource("SpriteFrames_e7lbe")
+animation = &"glitch"
+autoplay = "glitch"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(3327.68, -510)
+scale = Vector2(1.02874, 1.02874)
+sprite_frames = SubResource("SpriteFrames_e7lbe")
+animation = &"glitch"
+autoplay = "glitch"
 
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
 [connection signal="body_entered" from="easy_winnode/Area2D" to="easy_winnode" method="_on_area_2d_body_entered"]
