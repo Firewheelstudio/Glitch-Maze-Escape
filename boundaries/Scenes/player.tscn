@@ -1,13 +1,63 @@
-[gd_scene load_steps=32 format=3 uid="uid://c0cqod28lbemx"]
+[gd_scene load_steps=46 format=3 uid="uid://c0cqod28lbemx"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_2fpu2"]
 [ext_resource type="Texture2D" uid="uid://dljc53gxmh5ao" path="res://butterfly sprite/blu butterfly concept_front_idle.png" id="2_hjl5o"]
+[ext_resource type="Texture2D" uid="uid://52xx6ra85evv" path="res://butterfly sprite/blu butterfly concept_back_idle.png" id="2_lxy7u"]
+[ext_resource type="Texture2D" uid="uid://bl7ar0de32e3d" path="res://butterfly sprite/blu butterfly concept_back_walk.png" id="3_4qy6q"]
 [ext_resource type="Texture2D" uid="uid://dotalnfayqg8h" path="res://butterfly sprite/blu butterfly concept_front_move.png" id="3_wmhu2"]
 [ext_resource type="Texture2D" uid="uid://dpchisb2hf8bd" path="res://butterfly sprite/blu butterfly concept_side_idle.png" id="4_xb8io"]
 [ext_resource type="Texture2D" uid="uid://bmsn88f2xqeix" path="res://butterfly sprite/blu butterfly concept_side_move.png" id="5_xiyim"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vng2"]
 size = Vector2(128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cdnf"]
+atlas = ExtResource("2_lxy7u")
+region = Rect2(0, 0, 599, 712)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bc1ov"]
+atlas = ExtResource("2_lxy7u")
+region = Rect2(599, 0, 599, 712)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41iyp"]
+atlas = ExtResource("2_lxy7u")
+region = Rect2(1198, 0, 599, 712)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3m7v"]
+atlas = ExtResource("2_lxy7u")
+region = Rect2(0, 712, 599, 712)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alw0s"]
+atlas = ExtResource("2_lxy7u")
+region = Rect2(599, 712, 599, 712)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ws0ts"]
+atlas = ExtResource("2_lxy7u")
+region = Rect2(1198, 712, 599, 712)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fahyx"]
+atlas = ExtResource("3_4qy6q")
+region = Rect2(0, 0, 567, 713)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eaf1w"]
+atlas = ExtResource("3_4qy6q")
+region = Rect2(567, 0, 567, 713)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rpf0"]
+atlas = ExtResource("3_4qy6q")
+region = Rect2(1134, 0, 567, 713)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7c1ma"]
+atlas = ExtResource("3_4qy6q")
+region = Rect2(0, 713, 567, 713)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xegk"]
+atlas = ExtResource("3_4qy6q")
+region = Rect2(567, 713, 567, 713)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pea2m"]
+atlas = ExtResource("3_4qy6q")
+region = Rect2(1134, 713, 567, 713)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6hi5j"]
 atlas = ExtResource("2_hjl5o")
@@ -107,6 +157,52 @@ region = Rect2(1168, 754, 584, 754)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sy8s6"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8cdnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bc1ov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41iyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3m7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alw0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ws0ts")
+}],
+"loop": true,
+"name": &"back idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fahyx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eaf1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rpf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7c1ma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xegk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pea2m")
+}],
+"loop": true,
+"name": &"back_walk",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6hi5j")
@@ -211,5 +307,5 @@ shape = SubResource("RectangleShape2D_8vng2")
 position = Vector2(-12, -2)
 scale = Vector2(0.273973, 0.273973)
 sprite_frames = SubResource("SpriteFrames_sy8s6")
-animation = &"front_idle"
+animation = &"back_walk"
 autoplay = "front_idle"

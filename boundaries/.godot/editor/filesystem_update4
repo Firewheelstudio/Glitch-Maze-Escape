@@ -5,9 +5,6 @@ res://Scenes/level_3.tscn
 res://Scenes/level_4.tscn
 res://Scenes/player.tscn
 res://Scenes/dungeon_tilemap.tscn
-res://Scripts/CanvasLayer.gd
-res://Portal_entrance.gd
-res://Scripts/winnode.gd
 res://Scenes/portal_entrance.tscn
-res://Scripts/player.gd
 res://Scenes/portal_exit.tscn
+res://Scripts/player.gd

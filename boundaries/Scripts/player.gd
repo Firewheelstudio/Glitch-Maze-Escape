@@ -24,7 +24,12 @@ func _process(delta):
 		
 	if y_axis == 0 && $AnimatedSprite2D.animation == "front_walk":
 		$AnimatedSprite2D.play("front_idle")
-	
+		
+	if y_axis < 0 && x_axis == 0 && canmove:
+		$AnimatedSprite2D.play("back_walk")
+		
+	if y_axis == 0 && $AnimatedSprite2D.animation == "back_walk":
+		$AnimatedSprite2D.play("back idle")
 #	if input == Vector2.ZERO:
 #		velocity = Vector2.ZERO
 #	else:
