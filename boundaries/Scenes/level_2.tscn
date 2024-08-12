@@ -11,10 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://da621otpkd3wm" path="res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png" id="9_xc0si"]
 [ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="10_wfy05"]
 [ext_resource type="PackedScene" uid="uid://bwqpfu1mxa3tt" path="res://Scenes/alarm_overlay.tscn" id="11_m5nk8"]
-[ext_resource type="PackedScene" path="res://Scenes/alarm_overlay_timer.tscn" id="12_i25d0"]
+[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="12_i25d0"]
 [ext_resource type="PackedScene" uid="uid://bd5tjg5qc7d6f" path="res://Scenes/room_entrance_detector.tscn" id="13_n785b"]
 [ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="14_530f1"]
-[ext_resource type="AudioStream" uid="uid://dqlitpxhlqltw" path="res://Music/alarm-26718.mp3" id="15_81pli"]
+[ext_resource type="AudioStream" uid="uid://dvxt1htsrfoyv" path="res://Music/alarm-26718.wav" id="15_g83yw"]
 [ext_resource type="Script" path="res://Scripts/alarm_player.gd" id="16_e2sx3"]
 [ext_resource type="PackedScene" uid="uid://jlh8eydg68jj" path="res://Scenes/checpointmanager.tscn" id="17_k433c"]
 
@@ -263,16 +263,19 @@ position = Vector2(4689, 2126)
 position = Vector2(8727, -1543)
 rotation = -1.43201
 sprite_frames = SubResource("SpriteFrames_ewbfy")
+autoplay = "default"
 
 [node name="YellowArrow4" type="AnimatedSprite2D" parent="."]
 position = Vector2(8855, 2293)
 rotation = -1.89132
 sprite_frames = SubResource("SpriteFrames_ewbfy")
+autoplay = "default"
 
 [node name="YellowArrow5" type="AnimatedSprite2D" parent="."]
 position = Vector2(13805, -317)
 rotation = -1.43201
 sprite_frames = SubResource("SpriteFrames_ewbfy")
+autoplay = "default"
 
 [node name="vertical_patrolling_enemy7" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(13509, 1846)
@@ -365,11 +368,12 @@ scale = Vector2(1.56479, 1.68052)
 
 [node name="bg_music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_530f1")
+volume_db = -22.355
 autoplay = true
 
 [node name="alarm_player" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("15_81pli")
-volume_db = -1.0
+stream = ExtResource("15_g83yw")
+volume_db = -21.382
 script = ExtResource("16_e2sx3")
 
 [node name="checkpoints" type="Node2D" parent="."]

@@ -27,3 +27,7 @@ func _on_room_entrance_detector_3_body_entered(body):
 
 func _on_room_entrance_detector_4_body_entered(body):
 	play_alarm(body) # Replace with function body.
+
+
+func _on_area_2d_body_entered(body):
+	pass # Replace with function body.

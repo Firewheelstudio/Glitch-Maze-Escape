@@ -1,6 +1,6 @@
+AudioStreamPlayer
 Node2D
 Label
-AudioStreamPlayer
 CanvasLayer
 CollisionShape2D
 Area2D

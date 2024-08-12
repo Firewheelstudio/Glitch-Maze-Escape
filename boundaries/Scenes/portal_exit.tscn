@@ -1,61 +1,59 @@
-[gd_scene load_steps=11 format=3 uid="uid://o0cba7b2chn3"]
+[gd_scene load_steps=15 format=3 uid="uid://o0cba7b2chn3"]
 
-[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="1_605oo"]
+[ext_resource type="Texture2D" uid="uid://de3qpwipldvrh" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0001.png" id="1_x6a52"]
+[ext_resource type="Texture2D" uid="uid://qmsqw37vyd81" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0002.png" id="2_tp8a2"]
+[ext_resource type="Texture2D" uid="uid://bgsn5yj2dxhqg" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0003.png" id="3_10bbn"]
+[ext_resource type="Texture2D" uid="uid://c0wjjye47s08m" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0004.png" id="4_so2w0"]
+[ext_resource type="Texture2D" uid="uid://q8e2o82ov843" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0005.png" id="5_nonxu"]
+[ext_resource type="Texture2D" uid="uid://byfcpa4bk0h2y" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0006.png" id="6_x8tvb"]
+[ext_resource type="Texture2D" uid="uid://dgh78qfwnvd0i" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0007.png" id="7_d00l5"]
+[ext_resource type="Texture2D" uid="uid://ce4cjlnn6irtp" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0008.png" id="8_vyeic"]
+[ext_resource type="Texture2D" uid="uid://c7otp17gi2lqf" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0009.png" id="9_udp3w"]
+[ext_resource type="Texture2D" uid="uid://bx51uqb07xcgp" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0010.png" id="10_jnjnu"]
+[ext_resource type="Texture2D" uid="uid://wcfii8gtgtbu" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0011.png" id="11_rmfy2"]
+[ext_resource type="Texture2D" uid="uid://dm6cisl3lnbxa" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0012.png" id="12_p524n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_55jdv"]
 radius = 80.0
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v28b6"]
-atlas = ExtResource("1_605oo")
-region = Rect2(0, 0, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k8al1"]
-atlas = ExtResource("1_605oo")
-region = Rect2(370, 0, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o2kxh"]
-atlas = ExtResource("1_605oo")
-region = Rect2(740, 0, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8bict"]
-atlas = ExtResource("1_605oo")
-region = Rect2(0, 348, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mldko"]
-atlas = ExtResource("1_605oo")
-region = Rect2(370, 348, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lm0dn"]
-atlas = ExtResource("1_605oo")
-region = Rect2(740, 348, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w31hh"]
-atlas = ExtResource("1_605oo")
-region = Rect2(0, 696, 370, 348)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f4sfa"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_v28b6")
+"texture": ExtResource("1_x6a52")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k8al1")
+"texture": ExtResource("2_tp8a2")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o2kxh")
+"texture": ExtResource("3_10bbn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8bict")
+"texture": ExtResource("4_so2w0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mldko")
+"texture": ExtResource("5_nonxu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lm0dn")
+"texture": ExtResource("6_x8tvb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_w31hh")
+"texture": ExtResource("7_d00l5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vyeic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_udp3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jnjnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rmfy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_p524n")
 }],
 "loop": true,
 "name": &"default",
@@ -70,4 +68,8 @@ animations = [{
 shape = SubResource("CircleShape2D_55jdv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(0.999994, -0.999996)
+scale = Vector2(0.832, 0.352)
 sprite_frames = SubResource("SpriteFrames_f4sfa")
+autoplay = "default"
+frame_progress = 0.266694

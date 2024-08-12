@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://x3rhnddblkug" path="res://sprites and tiles/Animated sprites/Enemies/bug_catcher_back_walk.png" id="3_8k3oc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52n58"]
-size = Vector2(178, 266)
+size = Vector2(60, 94)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iqurl"]
 atlas = ExtResource("2_0e65c")
@@ -138,16 +138,18 @@ script = ExtResource("1_jrgbw")
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(7, -20)
 shape = SubResource("RectangleShape2D_52n58")
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
-position = Vector2(25, -69)
+position = Vector2(6, -21)
 shape = SubResource("RectangleShape2D_52n58")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/Area2D"]
-position = Vector2(-49, -64)
+position = Vector2(-14, -16)
+scale = Vector2(0.352507, 0.352507)
 sprite_frames = SubResource("SpriteFrames_lwia0")
 animation = &"forward"
 

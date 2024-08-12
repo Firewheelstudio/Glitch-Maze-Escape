@@ -1,62 +1,60 @@
-[gd_scene load_steps=12 format=3 uid="uid://5kce1uniqhvi"]
+[gd_scene load_steps=16 format=3 uid="uid://5kce1uniqhvi"]
 
 [ext_resource type="Script" path="res://Scripts/Portal_entrance.gd" id="1_pegpw"]
-[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="2_qeob3"]
+[ext_resource type="Texture2D" uid="uid://de3qpwipldvrh" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0001.png" id="2_qdk2s"]
+[ext_resource type="Texture2D" uid="uid://qmsqw37vyd81" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0002.png" id="3_dpk14"]
+[ext_resource type="Texture2D" uid="uid://bgsn5yj2dxhqg" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0003.png" id="4_qlygc"]
+[ext_resource type="Texture2D" uid="uid://c0wjjye47s08m" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0004.png" id="5_7mitv"]
+[ext_resource type="Texture2D" uid="uid://q8e2o82ov843" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0005.png" id="6_kunf7"]
+[ext_resource type="Texture2D" uid="uid://byfcpa4bk0h2y" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0006.png" id="7_7h7dd"]
+[ext_resource type="Texture2D" uid="uid://dgh78qfwnvd0i" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0007.png" id="8_7sqmr"]
+[ext_resource type="Texture2D" uid="uid://ce4cjlnn6irtp" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0008.png" id="9_avhif"]
+[ext_resource type="Texture2D" uid="uid://c7otp17gi2lqf" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0009.png" id="10_ualow"]
+[ext_resource type="Texture2D" uid="uid://bx51uqb07xcgp" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0010.png" id="11_fhjpr"]
+[ext_resource type="Texture2D" uid="uid://wcfii8gtgtbu" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0011.png" id="12_s4aqe"]
+[ext_resource type="Texture2D" uid="uid://dm6cisl3lnbxa" path="res://sprites and tiles/Animated sprites/glitches/portal/portal cincept 1.0012.png" id="13_dr4fy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mvyfq"]
 radius = 80.0
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v28b6"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(0, 0, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k8al1"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(370, 0, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o2kxh"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(740, 0, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8bict"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(0, 348, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mldko"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(370, 348, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lm0dn"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(740, 348, 370, 348)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w31hh"]
-atlas = ExtResource("2_qeob3")
-region = Rect2(0, 696, 370, 348)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uqfmw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_v28b6")
+"texture": ExtResource("2_qdk2s")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k8al1")
+"texture": ExtResource("3_dpk14")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_o2kxh")
+"texture": ExtResource("4_qlygc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8bict")
+"texture": ExtResource("5_7mitv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mldko")
+"texture": ExtResource("6_kunf7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_lm0dn")
+"texture": ExtResource("7_7h7dd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_w31hh")
+"texture": ExtResource("8_7sqmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_avhif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ualow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fhjpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s4aqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dr4fy")
 }],
 "loop": true,
 "name": &"default",
@@ -72,6 +70,10 @@ script = ExtResource("1_pegpw")
 shape = SubResource("CircleShape2D_mvyfq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(4.5, 2.00001)
+scale = Vector2(0.78, 0.328)
 sprite_frames = SubResource("SpriteFrames_uqfmw")
+autoplay = "default"
+frame_progress = 0.697683
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

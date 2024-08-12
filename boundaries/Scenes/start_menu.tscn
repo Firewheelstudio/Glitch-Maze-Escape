@@ -78,6 +78,7 @@ text = "level select
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_k2pjl")
+volume_db = -22.355
 autoplay = true
 
 [node name="Label" type="Label" parent="."]

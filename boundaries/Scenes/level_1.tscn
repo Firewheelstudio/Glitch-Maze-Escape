@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/easy_winnode.gd" id="4_dd504"]
 [ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="5_41755"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="6_615l3"]
-[ext_resource type="PackedScene" path="res://Scenes/alarm_overlay_timer.tscn" id="6_fpi2o"]
+[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="6_fpi2o"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="7_31rjf"]
 [ext_resource type="PackedScene" uid="uid://dk0hscnisbwn8" path="res://Scenes/vertical_patrolling_enemy.tscn" id="8_cxidv"]
 [ext_resource type="PackedScene" uid="uid://vxbp0b18ycsg" path="res://Scenes/horizontal_patrolling_enemy.tscn" id="9_hy6cw"]
@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bcve2gss22sxo" path="res://Scenes/lose_screen.tscn" id="18_tctfj"]
 [ext_resource type="PackedScene" uid="uid://jlh8eydg68jj" path="res://Scenes/checpointmanager.tscn" id="19_0al73"]
 [ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="20_8nfea"]
-[ext_resource type="AudioStream" uid="uid://dqlitpxhlqltw" path="res://Music/alarm-26718.mp3" id="21_6lyva"]
+[ext_resource type="AudioStream" uid="uid://dvxt1htsrfoyv" path="res://Music/alarm-26718.wav" id="21_etm4l"]
 [ext_resource type="Script" path="res://Scripts/alarm_player.gd" id="21_sphia"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yen1x"]
@@ -287,16 +287,19 @@ autoplay = "default"
 position = Vector2(6337, -149)
 rotation = 3.28995
 sprite_frames = SubResource("SpriteFrames_15obw")
+autoplay = "default"
 
 [node name="YellowArrow2" type="AnimatedSprite2D" parent="."]
 position = Vector2(13935, -3898)
 rotation = 0.178024
 sprite_frames = SubResource("SpriteFrames_15obw")
+autoplay = "default"
 
 [node name="YellowArrow" type="AnimatedSprite2D" parent="."]
 position = Vector2(10379, -1835)
 rotation = -1.79594
 sprite_frames = SubResource("SpriteFrames_15obw")
+autoplay = "default"
 
 [node name="YellowArrow4" type="AnimatedSprite2D" parent="."]
 position = Vector2(7155, -1883)
@@ -363,11 +366,12 @@ shape = SubResource("CircleShape2D_gnoh0")
 
 [node name="bg_music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("20_8nfea")
+volume_db = -22.355
 autoplay = true
 
 [node name="alarm_player" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("21_6lyva")
-volume_db = -1.0
+stream = ExtResource("21_etm4l")
+volume_db = -21.382
 script = ExtResource("21_sphia")
 
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
@@ -391,5 +395,4 @@ script = ExtResource("21_sphia")
 [connection signal="body_entered" from="room_entrance_detector2" to="AlarmOverlay2/Timer" method="_on_room_entrance_detector_2_body_entered"]
 [connection signal="body_entered" from="room_entrance_detector2" to="alarm_player" method="_on_room_entrance_detector_2_body_entered"]
 [connection signal="timeout" from="AlarmOverlay2/Timer" to="AlarmOverlay2" method="_on_timer_timeout"]
-[connection signal="body_entered" from="checpoints/checkpoint1/Area2D" to="checpoints/checpointmanager" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="checpoints/checkpoint2/checpointarea2" to="checpoints/checpointmanager" method="_on_checpointarea_2_body_entered"]

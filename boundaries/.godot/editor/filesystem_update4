@@ -17,7 +17,4 @@ res://Scenes/level_3.tscn
 res://Scenes/level_4.tscn
 res://Scenes/credit_screen.tscn
 res://Scenes/level_1.tscn
-res://Scripts/player.gd
-res://Scripts/Portal_entrance.gd
-res://Scripts/checpointmanager.gd
-res://Scripts/level.gd
+res://Scripts/alarm_player.gd
