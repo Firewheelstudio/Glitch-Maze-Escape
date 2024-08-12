@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://dys0qeupo4xym"]
 
-[ext_resource type="Script" path="res://Scripts/Textvanishnigtimer.gd" id="1_ixp7l"]
+[ext_resource type="Script" path="res://Scripts/Alarm_Timer.gd" id="1_wfc1r"]
 
 [node name="Timer" type="Timer"]
 wait_time = 4.0
 autostart = true
-script = ExtResource("1_ixp7l")
+script = ExtResource("1_wfc1r")

@@ -1,5 +1,8 @@
-res://Scenes/level_1.tscn
+res://Scenes/vertical_patrolling_enemy.tscn
 res://Scripts/nextscenechanger.gd
+res://Scripts/horizontal_patrolling_enemy.gd
+res://Scripts/vertical_patrolling_enemy.gd
+res://Scenes/level_1.tscn
 res://Scenes/level_2.tscn
 res://Scenes/level_3.tscn
 res://Scenes/level_4.tscn
@@ -9,10 +12,14 @@ res://Scenes/portal_entrance.tscn
 res://Scenes/portal_exit.tscn
 res://Scenes/winnode.tscn
 res://Scenes/enemy_node.tscn
-res://Scenes/vertical_patrolling_enemy.tscn
 res://Scenes/horizontal_patrolling_enemy.tscn
 res://Scenes/start_menu.tscn
 res://Scenes/level_select.tscn
 res://Scenes/easy_win_screen.tscn
 res://Scenes/hard_win_screen.tscn
 res://Scenes/lose_screen.tscn
+res://Scripts/AlarmOverlay.gd
+res://Scripts/Alarm_Timer.gd
+res://Scenes/room_entrance_detector.tscn
+res://Scenes/alarm_overlay.tscn
+res://Scenes/Textvanishnigtimer.tscn

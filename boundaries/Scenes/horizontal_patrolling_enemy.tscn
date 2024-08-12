@@ -1,10 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://vxbp0b18ycsg"]
+[gd_scene load_steps=10 format=3 uid="uid://vxbp0b18ycsg"]
 
 [ext_resource type="Script" path="res://Scripts/horizontal_patrolling_enemy.gd" id="1_b53od"]
-[ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="2_b2hfe"]
+[ext_resource type="Texture2D" uid="uid://dgtufilx22d8g" path="res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_backwards.png" id="2_84flk"]
+[ext_resource type="Texture2D" uid="uid://ctlwkvr0bdyim" path="res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_forward.png" id="3_2r0ag"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yb85m"]
 size = Vector2(128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sn20j"]
+atlas = ExtResource("2_84flk")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lu1qy"]
+atlas = ExtResource("2_84flk")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0mhy"]
+atlas = ExtResource("3_2r0ag")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ib3ep"]
+atlas = ExtResource("3_2r0ag")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nxf6s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sn20j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lu1qy")
+}],
+"loop": true,
+"name": &"backward",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0mhy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ib3ep")
+}],
+"loop": true,
+"name": &"forward",
+"speed": 12.0
+}]
 
 [node name="horizontal_patrolling_enemy" type="Node2D"]
 script = ExtResource("1_b53od")
@@ -19,7 +61,8 @@ shape = SubResource("RectangleShape2D_yb85m")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
 shape = SubResource("RectangleShape2D_yb85m")
 
-[node name="Icon" type="Sprite2D" parent="CharacterBody2D/Area2D"]
-texture = ExtResource("2_b2hfe")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/Area2D"]
+sprite_frames = SubResource("SpriteFrames_nxf6s")
+animation = &"backward"
 
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="." method="_on_area_2d_body_entered"]

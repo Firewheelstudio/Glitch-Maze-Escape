@@ -13,6 +13,16 @@ func _ready():
 func _process(delta):
 	var velocity = speed * vector
 	position += velocity * delta
+	handle_animation()
+
+func handle_animation():
+	match vector:
+		Vector2.LEFT:
+			$CharacterBody2D/Area2D/AnimatedSprite2D.animation == "forward"
+			$CharacterBody2D/Area2D/AnimatedSprite2D.play("forward")
+		Vector2.RIGHT:
+			$CharacterBody2D/Area2D/AnimatedSprite2D.animation == "backward"
+			$CharacterBody2D/Area2D/AnimatedSprite2D.play("backward")
 
 
 func _on_area_2d_body_entered(body):

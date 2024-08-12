@@ -20,14 +20,6 @@ But what else was there to see?
 What could they have been hiding? 
 What didn't they want you to see? "
 
-[node name="retryButton" type="Button" parent="Label"]
-layout_mode = 0
-offset_left = 13.0
-offset_top = 155.0
-offset_right = 130.0
-offset_bottom = 249.0
-text = "retry"
-
 [node name="levelselectButton" type="Button" parent="Label"]
 layout_mode = 0
 offset_left = 295.0
@@ -36,5 +28,4 @@ offset_right = 389.0
 offset_bottom = 218.0
 text = "level select"
 
-[connection signal="pressed" from="Label/retryButton" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Label/levelselectButton" to="." method="_on_levelselect_button_pressed"]

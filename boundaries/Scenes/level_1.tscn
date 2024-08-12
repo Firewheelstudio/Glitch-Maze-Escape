@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://ce0wm4o0ayrj0"]
+[gd_scene load_steps=37 format=3 uid="uid://ce0wm4o0ayrj0"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_5nwrf"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_pi16v"]
@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://o0cba7b2chn3" path="res://Scenes/portal_exit.tscn" id="12_7xr2t"]
 [ext_resource type="Texture2D" uid="uid://da621otpkd3wm" path="res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png" id="13_u0wt5"]
 [ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="14_vn21h"]
+[ext_resource type="PackedScene" uid="uid://bd5tjg5qc7d6f" path="res://Scenes/room_entrance_detector.tscn" id="15_tt7di"]
+[ext_resource type="Texture2D" uid="uid://dm3i1e0qgy124" path="res://sprites and tiles/Alarm_overlay.png" id="16_sq6th"]
+[ext_resource type="Script" path="res://Scripts/AlarmOverlay.gd" id="17_02bne"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yen1x"]
 atlas = ExtResource("14_vn21h")
@@ -174,20 +177,20 @@ zoom = Vector2(0.5, 0.5)
 script = ExtResource("6_615l3")
 
 [node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 454.0
-offset_top = 448.0
-offset_right = 1526.0
-offset_bottom = 619.0
+offset_left = 274.0
+offset_top = 315.0
+offset_right = 1346.0
+offset_bottom = 486.0
 theme_override_font_sizes/font_size = 40
 text = "You've lived your life in a walled garden but
 they forgot to close the door. What will you do? 
 Where will you go?"
 
 [node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 709.0
-offset_top = 607.0
-offset_right = 1006.0
-offset_bottom = 720.0
+offset_left = 516.0
+offset_top = 548.0
+offset_right = 813.0
+offset_bottom = 661.0
 theme_override_font_sizes/font_size = 40
 text = "Interesting.."
 
@@ -197,8 +200,6 @@ offset_top = 980.0
 offset_right = 1727.0
 offset_bottom = 1093.0
 theme_override_font_sizes/font_size = 40
-
-[node name="Timer" parent="." instance=ExtResource("6_fpi2o")]
 
 [node name="winnodwchecker" parent="." instance=ExtResource("7_31rjf")]
 
@@ -213,9 +214,6 @@ position = Vector2(5220, -2301)
 
 [node name="horizontal_patrolling_enemy4" parent="." instance=ExtResource("9_hy6cw")]
 position = Vector2(6402, -2472)
-
-[node name="horizontal_patrolling_enemy4" parent="horizontal_patrolling_enemy4" instance=ExtResource("9_hy6cw")]
-position = Vector2(875, -472)
 
 [node name="horizontal_patrolling_enemy3" parent="." instance=ExtResource("9_hy6cw")]
 position = Vector2(6333, -1832)
@@ -279,14 +277,51 @@ sprite_frames = SubResource("SpriteFrames_15obw")
 [node name="vertical_patrolling_enemy7" parent="." instance=ExtResource("8_cxidv")]
 position = Vector2(6467, 94)
 
+[node name="horizontal_patrolling_enemy5" parent="." instance=ExtResource("9_hy6cw")]
+position = Vector2(7277, -2944)
+
+[node name="room_entrance_detector" parent="." instance=ExtResource("15_tt7di")]
+position = Vector2(5265, 823)
+scale = Vector2(20, 20)
+
+[node name="AlarmOverlay" type="Sprite2D" parent="."]
+position = Vector2(6867, 832)
+scale = Vector2(30.6953, 17.8516)
+texture = ExtResource("16_sq6th")
+script = ExtResource("17_02bne")
+
+[node name="Timer" parent="AlarmOverlay" instance=ExtResource("6_fpi2o")]
+wait_time = 2.0
+autostart = false
+
+[node name="room_entrance_detector2" parent="." instance=ExtResource("15_tt7di")]
+position = Vector2(6621, -989)
+scale = Vector2(20, 20)
+
+[node name="AlarmOverlay2" type="Sprite2D" parent="."]
+position = Vector2(6423.25, -2167.25)
+scale = Vector2(24.5508, 20.8555)
+texture = ExtResource("16_sq6th")
+script = ExtResource("17_02bne")
+
+[node name="Timer" parent="AlarmOverlay2" instance=ExtResource("6_fpi2o")]
+wait_time = 2.0
+autostart = false
+
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
 [connection signal="player_captured" from="vertical_patrolling_enemy3" to="playernode" method="_on_vertical_patrolling_enemy_player_captured"]
 [connection signal="player_captured" from="vertical_patrolling_enemy" to="playernode" method="_on_vertical_patrolling_enemy_player_captured"]
 [connection signal="player_captured" from="horizontal_patrolling_enemy2" to="playernode" method="_on_horizontal_patrolling_enemy_2_player_captured"]
 [connection signal="player_captured" from="horizontal_patrolling_enemy4" to="playernode" method="_on_horizontal_patrolling_enemy_3_player_captured"]
-[connection signal="player_captured" from="horizontal_patrolling_enemy4/horizontal_patrolling_enemy4" to="playernode" method="_on_horizontal_patrolling_enemy_3_player_captured"]
 [connection signal="player_captured" from="horizontal_patrolling_enemy3" to="playernode" method="_on_horizontal_patrolling_enemy_3_player_captured"]
 [connection signal="player_captured" from="vertical_patrolling_enemy5" to="playernode" method="_on_vertical_patrolling_enemy_5_player_captured"]
 [connection signal="player_captured" from="vertical_patrolling_enemy6" to="playernode" method="_on_vertical_patrolling_enemy_6_player_captured"]
 [connection signal="portal_entered" from="Portal_entrance" to="playernode" method="_on_portal_entrance_portal_entered"]
 [connection signal="player_captured" from="vertical_patrolling_enemy7" to="playernode" method="_on_vertical_patrolling_enemy_6_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy5" to="playernode" method="_on_horizontal_patrolling_enemy_3_player_captured"]
+[connection signal="body_entered" from="room_entrance_detector" to="AlarmOverlay" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="room_entrance_detector" to="AlarmOverlay/Timer" method="_on_room_entrance_detector_body_entered"]
+[connection signal="timeout" from="AlarmOverlay/Timer" to="AlarmOverlay" method="_on_timer_timeout"]
+[connection signal="body_entered" from="room_entrance_detector2" to="AlarmOverlay2" method="_on_room_entrance_detector_2_body_entered"]
+[connection signal="body_entered" from="room_entrance_detector2" to="AlarmOverlay2/Timer" method="_on_room_entrance_detector_2_body_entered"]
+[connection signal="timeout" from="AlarmOverlay2/Timer" to="AlarmOverlay2" method="_on_timer_timeout"]

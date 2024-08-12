@@ -1,10 +1,52 @@
-[gd_scene load_steps=4 format=3 uid="uid://dk0hscnisbwn8"]
+[gd_scene load_steps=10 format=3 uid="uid://dk0hscnisbwn8"]
 
 [ext_resource type="Script" path="res://Scripts/vertical_patrolling_enemy.gd" id="1_jrgbw"]
-[ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="2_265w2"]
+[ext_resource type="Texture2D" uid="uid://dgtufilx22d8g" path="res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_backwards.png" id="2_falao"]
+[ext_resource type="Texture2D" uid="uid://ctlwkvr0bdyim" path="res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_forward.png" id="3_sn0u4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_52n58"]
 size = Vector2(128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aw311"]
+atlas = ExtResource("2_falao")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kexfc"]
+atlas = ExtResource("2_falao")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amy1h"]
+atlas = ExtResource("3_sn0u4")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ukpt"]
+atlas = ExtResource("3_sn0u4")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lwia0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aw311")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kexfc")
+}],
+"loop": true,
+"name": &"backward",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_amy1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ukpt")
+}],
+"loop": true,
+"name": &"forward",
+"speed": 12.0
+}]
 
 [node name="vertical_patrolling_enemy" type="Node2D"]
 script = ExtResource("1_jrgbw")
@@ -19,7 +61,9 @@ shape = SubResource("RectangleShape2D_52n58")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
 shape = SubResource("RectangleShape2D_52n58")
 
-[node name="Icon" type="Sprite2D" parent="CharacterBody2D/Area2D"]
-texture = ExtResource("2_265w2")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/Area2D"]
+sprite_frames = SubResource("SpriteFrames_lwia0")
+animation = &"backward"
+frame_progress = 0.711895
 
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="." method="_on_area_2d_body_entered"]

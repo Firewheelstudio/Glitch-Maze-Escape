@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bmsn88f2xqeix" path="res://butterfly sprite/blu butterfly concept_side_move.png" id="5_xiyim"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vng2"]
-size = Vector2(128, 128)
+size = Vector2(58, 97)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8cdnf"]
 atlas = ExtResource("2_lxy7u")
@@ -300,7 +300,7 @@ animations = [{
 script = ExtResource("1_2fpu2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
+position = Vector2(-15, 11.5)
 shape = SubResource("RectangleShape2D_8vng2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

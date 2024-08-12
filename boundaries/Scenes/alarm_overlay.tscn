@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwqpfu1mxa3tt"]
+
+[ext_resource type="Texture2D" uid="uid://dm3i1e0qgy124" path="res://sprites and tiles/Alarm_overlay.png" id="1_iehuh"]
+[ext_resource type="Script" path="res://Scripts/AlarmOverlay.gd" id="2_5xmfl"]
+[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/Textvanishnigtimer.tscn" id="3_mrsqq"]
+
+[node name="AlarmOverlay" type="Sprite2D"]
+position = Vector2(6867, 832)
+scale = Vector2(30.6953, 17.8516)
+texture = ExtResource("1_iehuh")
+script = ExtResource("2_5xmfl")
+
+[node name="Timer" parent="." instance=ExtResource("3_mrsqq")]
+wait_time = 2.0
+autostart = false
