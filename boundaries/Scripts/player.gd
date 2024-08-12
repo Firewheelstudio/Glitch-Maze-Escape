@@ -2,7 +2,13 @@ extends CharacterBody2D
 var speed = 800
 var accel = 1500
 var canmove = false
+var plr = preload("res://Scenes/player.tscn")
 
+var placetorespawn  #it contains coords of current checpoint
+func _ready():
+	$Camera2D/CanvasLayer/Label3.hide()
+	$Camera2D/CanvasLayer/end_button.hide()
+	$Camera2D/CanvasLayer/level_select_button.hide()
 func _process(delta):
 	var x_axis = Input.get_axis("move_left", "move_right")
 	var y_axis = Input.get_axis("move_up", "move_down")
@@ -44,21 +50,33 @@ func _on_portal_entrance_portal_entered():
 
 # signals from enemies to tell player they've lost
 func _on_enemy_node_captured_player():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_vertical_patrolling_enemy_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_horizontal_patrolling_enemy_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_horizontal_patrolling_enemy_2_player_captured():
-		get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_horizontal_patrolling_enemy_3_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_vertical_patrolling_enemy_2_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_vertical_patrolling_enemy_4_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_vertical_patrolling_enemy_5_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	death()
 func _on_vertical_patrolling_enemy_6_player_captured():
-	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
-	
+	death()
+func death():
+	canmove = false
+	$Camera2D/CanvasLayer/Label3.show()
+	$Camera2D/CanvasLayer/end_button.show()
+	$Camera2D/CanvasLayer/level_select_button.show()
+	$CollisionShape2D.disabled = true
+func respawn():
+	global_position = placetorespawn
+	$Camera2D/CanvasLayer/Label3.hide()
+	$Camera2D/CanvasLayer/end_button.hide()
+	$Camera2D/CanvasLayer/level_select_button.hide()
+	canmove = true
+	$CollisionShape2D.disabled = false

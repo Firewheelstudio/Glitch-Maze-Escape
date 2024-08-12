@@ -11,13 +11,8 @@ func _process(delta):
 	pass
 
 
-func _on_retry_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/start_menu.tscn") # Replace with function body.
+func _on_end_button_button_down():
+	$"../playernode".respawn()
 
-
-func _on_end_button_pressed():
-	get_tree().quit() # Replace with function body.
-
-
-func _on_level_select_button_pressed():
+func _on_level_select_button_button_down():
 	get_tree().change_scene_to_file("res://Scenes/level_select.tscn") # Replace with function body.

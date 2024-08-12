@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://ce0wm4o0ayrj0"]
+[gd_scene load_steps=40 format=3 uid="uid://ce0wm4o0ayrj0"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_5nwrf"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_pi16v"]
@@ -17,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://bd5tjg5qc7d6f" path="res://Scenes/room_entrance_detector.tscn" id="15_tt7di"]
 [ext_resource type="Texture2D" uid="uid://dm3i1e0qgy124" path="res://sprites and tiles/Alarm_overlay.png" id="16_sq6th"]
 [ext_resource type="Script" path="res://Scripts/AlarmOverlay.gd" id="17_02bne"]
+[ext_resource type="PackedScene" uid="uid://bcve2gss22sxo" path="res://Scenes/lose_screen.tscn" id="18_tctfj"]
+[ext_resource type="PackedScene" uid="uid://jlh8eydg68jj" path="res://Scenes/checpointmanager.tscn" id="19_0al73"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yen1x"]
 atlas = ExtResource("14_vn21h")
@@ -153,6 +155,9 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_gnoh0"]
+radius = 328.956
+
 [node name="level1" type="Node2D"]
 script = ExtResource("1_5nwrf")
 
@@ -200,6 +205,27 @@ offset_top = 980.0
 offset_right = 1727.0
 offset_bottom = 1093.0
 theme_override_font_sizes/font_size = 40
+
+[node name="Label3" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 309.0
+offset_top = 136.0
+offset_right = 349.0
+offset_bottom = 159.0
+text = "You lost. Now you'll never find \"Freedom\""
+
+[node name="end_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 477.0
+offset_top = 218.0
+offset_right = 565.0
+offset_bottom = 249.0
+text = "end"
+
+[node name="level_select_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 408.0
+offset_top = 273.0
+offset_right = 502.0
+offset_bottom = 304.0
+text = "level select"
 
 [node name="winnodwchecker" parent="." instance=ExtResource("7_31rjf")]
 
@@ -308,7 +334,32 @@ script = ExtResource("17_02bne")
 wait_time = 2.0
 autostart = false
 
+[node name="lose_screen" parent="." instance=ExtResource("18_tctfj")]
+
+[node name="checpoints" type="Node2D" parent="."]
+
+[node name="checpointmanager" parent="checpoints" instance=ExtResource("19_0al73")]
+visible = false
+
+[node name="checkpoint1" type="Marker2D" parent="checpoints"]
+position = Vector2(1297, 602)
+
+[node name="Area2D" type="Area2D" parent="checpoints/checkpoint1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checpoints/checkpoint1/Area2D"]
+shape = SubResource("CircleShape2D_gnoh0")
+
+[node name="checkpoint2" type="Marker2D" parent="checpoints"]
+position = Vector2(6627, -634)
+
+[node name="checpointarea2" type="Area2D" parent="checpoints/checkpoint2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checpoints/checkpoint2/checpointarea2"]
+shape = SubResource("CircleShape2D_gnoh0")
+
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
+[connection signal="button_down" from="playernode/Camera2D/CanvasLayer/end_button" to="lose_screen" method="_on_end_button_button_down"]
+[connection signal="button_down" from="playernode/Camera2D/CanvasLayer/level_select_button" to="lose_screen" method="_on_level_select_button_button_down"]
 [connection signal="player_captured" from="vertical_patrolling_enemy3" to="playernode" method="_on_vertical_patrolling_enemy_player_captured"]
 [connection signal="player_captured" from="vertical_patrolling_enemy" to="playernode" method="_on_vertical_patrolling_enemy_player_captured"]
 [connection signal="player_captured" from="horizontal_patrolling_enemy2" to="playernode" method="_on_horizontal_patrolling_enemy_2_player_captured"]
@@ -325,3 +376,5 @@ autostart = false
 [connection signal="body_entered" from="room_entrance_detector2" to="AlarmOverlay2" method="_on_room_entrance_detector_2_body_entered"]
 [connection signal="body_entered" from="room_entrance_detector2" to="AlarmOverlay2/Timer" method="_on_room_entrance_detector_2_body_entered"]
 [connection signal="timeout" from="AlarmOverlay2/Timer" to="AlarmOverlay2" method="_on_timer_timeout"]
+[connection signal="body_entered" from="checpoints/checkpoint1/Area2D" to="checpoints/checpointmanager" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="checpoints/checkpoint2/checpointarea2" to="checpoints/checpointmanager" method="_on_checpointarea_2_body_entered"]

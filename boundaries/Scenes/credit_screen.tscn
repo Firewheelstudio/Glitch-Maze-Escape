@@ -12,6 +12,7 @@ offset_right = 490.0
 offset_bottom = 204.0
 text = "Rick Vegas - Game Design
 David Daniels (davedalus6) - programmer
+Valep(Ne_Lepo) - programmer
 Everybody give yourself a name"
 
 [node name="BackButton" type="Button" parent="."]
