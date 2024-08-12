@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/easy_winnode.gd" id="4_dd504"]
 [ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="5_41755"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="6_615l3"]
-[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="6_fpi2o"]
+[ext_resource type="PackedScene" path="res://Scenes/alarm_overlay_timer.tscn" id="6_fpi2o"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="7_31rjf"]
 [ext_resource type="PackedScene" uid="uid://dk0hscnisbwn8" path="res://Scenes/vertical_patrolling_enemy.tscn" id="8_cxidv"]
 [ext_resource type="PackedScene" uid="uid://vxbp0b18ycsg" path="res://Scenes/horizontal_patrolling_enemy.tscn" id="9_hy6cw"]
@@ -175,7 +175,7 @@ position = Vector2(1416, 272)
 script = ExtResource("4_dd504")
 
 [node name="playernode" parent="." instance=ExtResource("5_41755")]
-position = Vector2(948, 489)
+position = Vector2(943, 527)
 
 [node name="Camera2D" type="Camera2D" parent="playernode"]
 position = Vector2(-12, 88)

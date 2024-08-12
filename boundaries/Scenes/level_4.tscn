@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bfq58cka68rd8"]
+[gd_scene load_steps=14 format=3 uid="uid://bk86dhlkqgaao"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_dubdf"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_f4w6k"]

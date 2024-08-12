@@ -16,7 +16,7 @@ func _process(delta):
 	var x_axis = Input.get_axis("move_left", "move_right")
 	var y_axis = Input.get_axis("move_up", "move_down")
 	var input := Vector2(x_axis, y_axis)
-	if canmove == true:
+	if canmove:
 		position += input * speed * delta
 		
 	if canmove:

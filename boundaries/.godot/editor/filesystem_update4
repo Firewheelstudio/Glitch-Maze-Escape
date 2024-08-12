@@ -1,7 +1,5 @@
-res://Scenes/level_1.tscn
 res://Scenes/dungeon_tilemap.tscn
 res://Scripts/nextscenechanger.gd
-res://Scripts/player.gd
 res://Scenes/portal_entrance.tscn
 res://Scenes/portal_exit.tscn
 res://Scenes/winnode.tscn
@@ -10,6 +8,7 @@ res://Scenes/vertical_patrolling_enemy.tscn
 res://Scenes/horizontal_patrolling_enemy.tscn
 res://Scenes/start_menu.tscn
 res://Scenes/level_select.tscn
+res://Scenes/alarm_timer.tscn
 res://Scenes/easy_win_screen.tscn
 res://Scenes/lose_screen.tscn
 res://Scenes/level_2.tscn
@@ -17,9 +16,6 @@ res://Scenes/player.tscn
 res://Scenes/level_3.tscn
 res://Scenes/level_4.tscn
 res://Scenes/credit_screen.tscn
-res://Scripts/level.gd
-res://Scenes/Textvanishnigtimer.tscn
-res://Scripts/Alarm_Timer.gd
-res://Scripts/AlarmOverlay.gd
-res://Scenes/alarm_timer.tscn
-res://Scripts/alarm_player.gd
+res://Scenes/level_1.tscn
+res://Scripts/player.gd
+res://Scripts/Portal_entrance.gd

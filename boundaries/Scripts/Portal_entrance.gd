@@ -12,4 +12,5 @@ func _process(delta):
 
 
 func _on_area_2d_body_entered(body):
-	portal_entered.emit() # Replace with function body.
+	if body.name == "playernode":
+		portal_entered.emit() # Replace with function body.

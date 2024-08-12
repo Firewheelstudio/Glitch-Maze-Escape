@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://da621otpkd3wm" path="res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png" id="9_xc0si"]
 [ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="10_wfy05"]
 [ext_resource type="PackedScene" uid="uid://bwqpfu1mxa3tt" path="res://Scenes/alarm_overlay.tscn" id="11_m5nk8"]
-[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="12_i25d0"]
+[ext_resource type="PackedScene" path="res://Scenes/alarm_overlay_timer.tscn" id="12_i25d0"]
 [ext_resource type="PackedScene" uid="uid://bd5tjg5qc7d6f" path="res://Scenes/room_entrance_detector.tscn" id="13_n785b"]
 [ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="14_530f1"]
 [ext_resource type="AudioStream" uid="uid://dqlitpxhlqltw" path="res://Music/alarm-26718.mp3" id="15_81pli"]
