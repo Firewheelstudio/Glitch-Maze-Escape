@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://c0cqod28lbemx"]
+[gd_scene load_steps=46 format=3 uid="uid://c4grbpjhiwvmk"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_2fpu2"]
 [ext_resource type="Texture2D" uid="uid://dljc53gxmh5ao" path="res://butterfly sprite/blu butterfly concept_front_idle.png" id="2_hjl5o"]

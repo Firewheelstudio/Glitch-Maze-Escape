@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_pi16v"]
 [ext_resource type="PackedScene" uid="uid://domfwhib0efct" path="res://Scenes/winnode.tscn" id="3_uchju"]
 [ext_resource type="Script" path="res://Scripts/easy_winnode.gd" id="4_dd504"]
-[ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="5_41755"]
+[ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="5_41755"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="6_615l3"]
 [ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/Textvanishnigtimer.tscn" id="6_fpi2o"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="7_31rjf"]

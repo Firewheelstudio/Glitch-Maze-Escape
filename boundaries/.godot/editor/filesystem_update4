@@ -1,12 +1,5 @@
-res://Scenes/credit_screen.tscn
-res://Scripts/nextscenechanger.gd
-res://Scenes/lose_screen.tscn
-res://Scenes/level_1.tscn
-res://Scenes/level_2.tscn
-res://Scenes/level_3.tscn
-res://Scenes/level_4.tscn
-res://Scenes/player.tscn
 res://Scenes/dungeon_tilemap.tscn
+res://Scripts/nextscenechanger.gd
 res://Scenes/portal_entrance.tscn
 res://Scenes/portal_exit.tscn
 res://Scenes/winnode.tscn
@@ -18,6 +11,6 @@ res://Scenes/level_select.tscn
 res://Scenes/easy_win_screen.tscn
 res://Scenes/alarm_overlay.tscn
 res://Scenes/Textvanishnigtimer.tscn
-res://Scripts/checpointmanager.gd
-res://Scripts/player.gd
-res://Scripts/lose_screen.gd
+res://Scenes/lose_screen.tscn
+res://Scenes/player.tscn
+res://Scenes/level_1.tscn

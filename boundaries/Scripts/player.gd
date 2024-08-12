@@ -2,7 +2,7 @@ extends CharacterBody2D
 var speed = 800
 var accel = 1500
 var canmove = false
-var plr = preload("res://Scenes/player.tscn")
+
 
 var placetorespawn  #it contains coords of current checpoint
 func _ready():
@@ -72,11 +72,10 @@ func death():
 	$Camera2D/CanvasLayer/Label3.show()
 	$Camera2D/CanvasLayer/end_button.show()
 	$Camera2D/CanvasLayer/level_select_button.show()
-	$CollisionShape2D.disabled = true
 func respawn():
 	global_position = placetorespawn
 	$Camera2D/CanvasLayer/Label3.hide()
 	$Camera2D/CanvasLayer/end_button.hide()
 	$Camera2D/CanvasLayer/level_select_button.hide()
 	canmove = true
-	$CollisionShape2D.disabled = false
+	velocity = Vector2.ZERO
