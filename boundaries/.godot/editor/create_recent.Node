@@ -1,10 +1,10 @@
+AnimatedSprite2D
 Button
 MenuBar
 Area2D
 Sprite2D
 CollisionShape2D
 CharacterBody2D
-AnimatedSprite2D
 CanvasLayer
 Node2D
 Timer

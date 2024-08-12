@@ -1,36 +1,36 @@
 [gd_scene load_steps=11 format=3 uid="uid://o0cba7b2chn3"]
 
-[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/glitch overlay/Glitched overlay 2.png" id="1_xyqrc"]
+[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="1_605oo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_55jdv"]
 radius = 80.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v28b6"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(0, 0, 370, 348)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k8al1"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(370, 0, 370, 348)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o2kxh"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(740, 0, 370, 348)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8bict"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(0, 348, 370, 348)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mldko"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(370, 348, 370, 348)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lm0dn"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(740, 348, 370, 348)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w31hh"]
-atlas = ExtResource("1_xyqrc")
+atlas = ExtResource("1_605oo")
 region = Rect2(0, 696, 370, 348)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f4sfa"]

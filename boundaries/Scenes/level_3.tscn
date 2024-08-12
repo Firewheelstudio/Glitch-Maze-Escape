@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="6_0tyuo"]
 [ext_resource type="Script" path="res://Scripts/winnode.gd" id="7_3oty0"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="8_gss23"]
-[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/glitch overlay/Glitched overlay 2.png" id="9_gqolt"]
+[ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="9_gqolt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_82cxc"]
 size = Vector2(491.5, 377)
