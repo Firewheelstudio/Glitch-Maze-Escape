@@ -17,7 +17,7 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "You took the easy way! Good job. be proud of being weak."
 
-[node name="Button" type="Button" parent="Label"]
+[node name="retryButton" type="Button" parent="Label"]
 layout_mode = 0
 offset_left = 13.0
 offset_top = 155.0
@@ -25,4 +25,13 @@ offset_right = 130.0
 offset_bottom = 249.0
 text = "retry"
 
-[connection signal="pressed" from="Label/Button" to="." method="_on_button_pressed"]
+[node name="levelselectButton" type="Button" parent="Label"]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 187.0
+offset_right = 389.0
+offset_bottom = 218.0
+text = "level select"
+
+[connection signal="pressed" from="Label/retryButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Label/levelselectButton" to="." method="_on_levelselect_button_pressed"]

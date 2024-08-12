@@ -51,6 +51,16 @@ offset_right = -495.24
 offset_bottom = -232.24
 text = "credits"
 
+[node name="levelselectbutton" type="Button" parent="MenuBar"]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 322.0
+offset_right = 371.0
+offset_bottom = 353.0
+text = "level select
+"
+
 [connection signal="pressed" from="MenuBar/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuBar/CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="MenuBar/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="MenuBar/levelselectbutton" to="." method="_on_levelselectbutton_pressed"]

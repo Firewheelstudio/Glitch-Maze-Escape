@@ -13,3 +13,7 @@ func _process(delta):
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://Scenes/level_1.tscn") # Replace with function body.
+
+
+func _on_levelselect_button_pressed():
+	get_tree().change_scene_to_file("res://Scenes/level_select.tscn") # Replace with function body.

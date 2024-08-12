@@ -35,5 +35,14 @@ offset_right = 565.0
 offset_bottom = 249.0
 text = "end"
 
+[node name="level_select_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 273.0
+offset_right = 502.0
+offset_bottom = 304.0
+text = "level select"
+
 [connection signal="pressed" from="retry_button" to="." method="_on_retry_button_pressed"]
 [connection signal="pressed" from="end_button" to="." method="_on_end_button_pressed"]
+[connection signal="pressed" from="level_select_button" to="." method="_on_level_select_button_pressed"]

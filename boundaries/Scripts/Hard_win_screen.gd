@@ -17,3 +17,7 @@ func _on_end_button_pressed():
 
 func _on_title_button_pressed():
 	get_tree().change_scene_to_file("res://Scenes/start_menu.tscn") # Replace with function body.
+
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://Scenes/level_select.tscn")# Replace with function body.

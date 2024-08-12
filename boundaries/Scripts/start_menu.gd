@@ -9,6 +9,9 @@ func _ready():
 func _process(delta):
 	pass
 
+func level_select():
+	get_tree().change_scene_to_file("res://Scenes/level_select.tscn")
+
 func _start():
 	get_tree().change_scene_to_file("res://Scenes/level_1.tscn")
 
@@ -27,3 +30,7 @@ func _on_close_button_pressed():
 
 func _on_credits_button_pressed():
 	_go_to_credits() # Replace with function body.
+
+
+func _on_levelselectbutton_pressed():
+	level_select() # Replace with function body.

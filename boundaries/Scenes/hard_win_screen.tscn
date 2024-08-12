@@ -35,5 +35,14 @@ offset_right = 1280.0
 offset_bottom = 359.0
 text = "You made it out of the greenhouse and into the server room. now everything is on fire."
 
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 573.684
+offset_top = 629.652
+offset_right = 581.684
+offset_bottom = 637.652
+text = "level select"
+
 [connection signal="pressed" from="EndButton" to="." method="_on_end_button_pressed"]
 [connection signal="pressed" from="TitleButton" to="." method="_on_title_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
