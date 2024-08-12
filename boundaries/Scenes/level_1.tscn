@@ -163,7 +163,7 @@ layer_1/tile_data = PackedInt32Array(131075, 589828, 5, 262148, 327684, 5, 26214
 
 [node name="easy_winnode" parent="." instance=ExtResource("3_uchju")]
 visible = false
-position = Vector2(1274, 149)
+position = Vector2(1416, 272)
 script = ExtResource("4_dd504")
 
 [node name="playernode" parent="." instance=ExtResource("5_41755")]
