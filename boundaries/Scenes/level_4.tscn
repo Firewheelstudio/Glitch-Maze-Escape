@@ -29,6 +29,7 @@ layer_0/tile_data = PackedInt32Array(-524290, 131073, 0, -917497, 65537, 0, -104
 position = Vector2(677, 673)
 
 [node name="Camera2D" type="Camera2D" parent="playernode"]
+zoom = Vector2(0.5, 0.5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="playernode/Camera2D"]
 script = ExtResource("5_griov")

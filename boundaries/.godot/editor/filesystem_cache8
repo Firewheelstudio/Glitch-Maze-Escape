@@ -1,179 +1,197 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723472539
-::res://backgrounds/::1723441479
-tilescreenbackground.jpg::CompressedTexture2D::4835763439725597291::1723441479::1723441479::1::::<><>::
-::res://butterfly sprite/::1723359789
-blu butterfly concept_back_idle.png::CompressedTexture2D::2162842727124839855::1723359789::1723359789::1::::<><>::
-blu butterfly concept_back_idle.txt::TextFile::-1::1723359789::0::1::::<><>::
-blu butterfly concept_back_walk.png::CompressedTexture2D::3224589728276146083::1723359789::1723359789::1::::<><>::
-blu butterfly concept_back_walk.txt::TextFile::-1::1723359789::0::1::::<><>::
-blu butterfly concept_front_idle.png::CompressedTexture2D::7950095219670868318::1723359789::1723359789::1::::<><>::
-blu butterfly concept_front_idle.txt::TextFile::-1::1723359789::0::1::::<><>::
-blu butterfly concept_front_move.png::CompressedTexture2D::8181149373632129089::1723359789::1723359789::1::::<><>::
-blu butterfly concept_front_move.txt::TextFile::-1::1723359789::0::1::::<><>::
-blu butterfly concept_side_idle.png::CompressedTexture2D::8216663714659965409::1723359789::1723359789::1::::<><>::
-blu butterfly concept_side_idle.txt::TextFile::-1::1723359789::0::1::::<><>::
-blu butterfly concept_side_move.png::CompressedTexture2D::3266695601280094023::1723359789::1723359789::1::::<><>::
-blu butterfly concept_side_move.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://Scenes/::1723472500
-alarm_overlay.tscn::PackedScene::3964526062863702905::1723472500::0::1::::<><>::uid://dm3i1e0qgy124::::res://sprites and tiles/Alarm_overlay.png<>res://Scripts/AlarmOverlay.gd<>uid://dys0qeupo4xym::::res://Scenes/Textvanishnigtimer.tscn
-checpointmanager.tscn::PackedScene::654891945499463543::1723447160::0::1::::<><>::res://Scripts/checpointmanager.gd
-credit_screen.tscn::PackedScene::2855639837089749969::1723472500::0::1::::<><>::res://Scripts/credit_screen.gd
-dungeon_tilemap.tscn::PackedScene::3975265519706147256::1723472499::0::1::::<><>::uid://cymu72is0wcxq::::res://sprites and tiles/Tilesets/Dungeon tileset.png<>uid://lwgp136ppfp::::res://sprites and tiles/Tilesets/DungeonTileSetGlitchedCloseUp.png<>uid://dxaexkwlrg0wu::::res://sprites and tiles/Tilesets/Lab/32px+VXACE/lab_floors.png<>uid://bw4ygvwbeh38s::::res://sprites and tiles/Tilesets/garden/gardentileset.png<>uid://65fpt3hy6b0p::::res://sprites and tiles/Tilesets/Lab/32px+VXACE/lab_gadgets.png
-easy_win_screen.tscn::PackedScene::5762910894447581338::1723472500::0::1::::<><>::res://Scripts/win_screen.gd
-enemy_node.tscn::PackedScene::4071419859714157735::1723472499::0::1::::<><>::res://Scripts/enemy_node.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg
-hard_win_screen.tscn::PackedScene::7337414207800408817::1723441479::0::1::::<><>::res://Scripts/Hard_win_screen.gd
-horizontal_patrolling_enemy.tscn::PackedScene::1521535224498319170::1723472499::0::1::::<><>::res://Scripts/horizontal_patrolling_enemy.gd<>uid://dgtufilx22d8g::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_backwards.png<>uid://ctlwkvr0bdyim::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_forward.png
-level_1.tscn::PackedScene::5106564935098811887::1723472500::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>res://Scripts/easy_winnode.gd<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://dys0qeupo4xym::::res://Scenes/Textvanishnigtimer.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://dk0hscnisbwn8::::res://Scenes/vertical_patrolling_enemy.tscn<>uid://vxbp0b18ycsg::::res://Scenes/horizontal_patrolling_enemy.tscn<>uid://5kce1uniqhvi::::res://Scenes/portal_entrance.tscn<>uid://o0cba7b2chn3::::res://Scenes/portal_exit.tscn<>uid://da621otpkd3wm::::res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png<>uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png<>uid://bd5tjg5qc7d6f::::res://Scenes/room_entrance_detector.tscn<>uid://dm3i1e0qgy124::::res://sprites and tiles/Alarm_overlay.png<>res://Scripts/AlarmOverlay.gd<>uid://bcve2gss22sxo::::res://Scenes/lose_screen.tscn<>uid://jlh8eydg68jj::::res://Scenes/checpointmanager.tscn
-level_2.tscn::PackedScene::288748753192567373::1723472500::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>res://Scripts/CanvasLayer.gd<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://dk0hscnisbwn8::::res://Scenes/vertical_patrolling_enemy.tscn
-level_3.tscn::PackedScene::3523055072999065678::1723472500::0::1::::<><>::res://Scripts/level.gd<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/easy_winnode.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>res://Scripts/winnode.gd<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png
-level_4.tscn::PackedScene::2772275507467562563::1723472500::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>res://Scripts/easy_winnode.gd<>res://Scripts/CanvasLayer.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/winnode.gd<>uid://5kce1uniqhvi::::res://Scenes/portal_entrance.tscn<>uid://o0cba7b2chn3::::res://Scenes/portal_exit.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://byahxp6qywh2f::::res://Scenes/enemy_node.tscn
-level_select.tscn::PackedScene::8225119533374399304::1723472500::0::1::::<><>::res://Scripts/level_select.gd
-lose_screen.tscn::PackedScene::2570441732012501036::1723472500::0::1::::<><>::res://Scripts/lose_screen.gd
-player.tscn::PackedScene::6821738876167554630::1723472500::0::1::::<><>::res://Scripts/player.gd<>uid://dljc53gxmh5ao::::res://butterfly sprite/blu butterfly concept_front_idle.png<>uid://52xx6ra85evv::::res://butterfly sprite/blu butterfly concept_back_idle.png<>uid://bl7ar0de32e3d::::res://butterfly sprite/blu butterfly concept_back_walk.png<>uid://dotalnfayqg8h::::res://butterfly sprite/blu butterfly concept_front_move.png<>uid://dpchisb2hf8bd::::res://butterfly sprite/blu butterfly concept_side_idle.png<>uid://bmsn88f2xqeix::::res://butterfly sprite/blu butterfly concept_side_move.png
-portal_entrance.tscn::PackedScene::2126439060947902734::1723472499::0::1::::<><>::res://Scripts/Portal_entrance.gd<>uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png
-portal_exit.tscn::PackedScene::1034376524078730578::1723472499::0::1::::<><>::uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png
-room_entrance_detector.tscn::PackedScene::2660088604451833423::1723441479::0::1::::<><>::
-start_menu.tscn::PackedScene::1750754224916360153::1723472500::0::1::::<><>::res://Scripts/start_menu.gd<>uid://ca5qk13wy0yln::::res://backgrounds/tilescreenbackground.jpg
-testworld.tscn::PackedScene::6702538428138471048::1723359789::0::1::::<><>::uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://cymu72is0wcxq::::res://sprites and tiles/Tilesets/Dungeon tileset.png<>res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn
-Textvanishnigtimer.tscn::PackedScene::8882499837177692480::1723472500::0::1::::<><>::res://Scripts/Alarm_Timer.gd
-vertical_patrolling_enemy.tscn::PackedScene::7913217220067535131::1723472499::0::1::::<><>::res://Scripts/vertical_patrolling_enemy.gd<>uid://dgtufilx22d8g::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_backwards.png<>uid://ctlwkvr0bdyim::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_forward.png
-winnode.tscn::PackedScene::8167021647591107131::1723472499::0::1::::<><>::res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg
-winnodwchecker.tscn::PackedScene::2890304566707577988::1723288685::0::1::::<><>::res://Scripts/nextscenechanger.gd
-::res://Scripts/::1723472499
-AlarmOverlay.gd::GDScript::-1::1723441479::0::1::::<>Sprite2D<>::
-Alarm_Timer.gd::GDScript::-1::1723441479::0::1::::<>Timer<>::
-CanvasLayer.gd::GDScript::-1::1723472155::0::1::::<>CanvasLayer<>::
-checpointmanager.gd::GDScript::-1::1723448805::0::1::::<>Node2D<>::
-credit_screen.gd::GDScript::-1::1723275477::0::1::::<>Node2D<>::
-easy_winnode.gd::GDScript::-1::1723441479::0::1::::<>Node2D<>::
-enemy_node.gd::GDScript::-1::1723441479::0::1::::<>Node2D<>::
-Hard_win_screen.gd::GDScript::-1::1723441479::0::1::::<>Control<>::
-horizontal_patrolling_enemy.gd::GDScript::-1::1723441479::0::1::::<>Node2D<>::
-level.gd::GDScript::-1::1723275477::0::1::::<>Node2D<>::
-level_select.gd::GDScript::-1::1723441479::0::1::::<>Control<>::
-lose_screen.gd::GDScript::-1::1723447592::0::1::::<>Control<>::
-nextscenechanger.gd::GDScript::-1::1723471754::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1723471249::0::1::::<>CharacterBody2D<>::
-Portal_entrance.gd::GDScript::-1::1723359789::0::1::::<>Node2D<>::
-start_menu.gd::GDScript::-1::1723472499::0::1::::<>Control<>::
-vertical_patrolling_enemy.gd::GDScript::-1::1723441479::0::1::::<>Node2D<>::
-winnode.gd::GDScript::-1::1723359789::0::1::::<>Node2D<>::
-win_screen.gd::GDScript::-1::1723441479::0::1::::<>Control<>::
-::res://sprites and tiles/::1723441479
-Alarm_overlay.png::CompressedTexture2D::8059863167882494587::1723441479::1723441479::1::::<><>::
-icon.svg::CompressedTexture2D::4439621496095052639::1723275477::1723275477::1::::<><>::
-::res://sprites and tiles/Animated sprites/::1723441479
-::res://sprites and tiles/Animated sprites/arrows/::1723359789
-::res://sprites and tiles/Animated sprites/arrows/blue arrow/::1723359789
-arrow concept blue.png::CompressedTexture2D::2929957232459782019::1723359789::1723359789::1::::<><>::
-arrow concept blue.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Animated sprites/arrows/green arrow/::1723359789
-arrow concept green.png::CompressedTexture2D::8835428912317150231::1723359789::1723359789::1::::<><>::
-arrow concept green.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Animated sprites/arrows/grey arrow/::1723359789
-arrow concept grey.png::CompressedTexture2D::8316675260777948720::1723359789::1723359789::1::::<><>::
-arrow concept grey.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Animated sprites/arrows/purple arrow/::1723359789
-arrow concept green.png::CompressedTexture2D::6666312984705783212::1723359789::1723359789::1::::<><>::
-arrow concept green.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Animated sprites/arrows/yellow arrow/::1723359789
-arrow concept yellow.png::CompressedTexture2D::7224944316274609728::1723359789::1723359789::1::::<><>::
-arrow concept yellow.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Animated sprites/Enemies/::1723441479
-Enemy_placeholder_backwards.png::CompressedTexture2D::7620841997321298332::1723441479::1723441479::1::::<><>::
-Enemy_placeholder_forward.png::CompressedTexture2D::6130492313972782084::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Animated sprites/glitches/::1723441479
-Glitched overlay 2.png::CompressedTexture2D::5736251672914605838::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Animated sprites/glitches/glitch overlay/::1723441479
-Glitched overlay 2.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Animated sprites/glitches/glitched red arrow/::1723359789
-arrow concept glitched 1.png::CompressedTexture2D::6802539666972195994::1723359789::1723359789::1::::<><>::
-arrow concept glitched 1.txt::TextFile::-1::1723359789::0::1::::<><>::
-::res://sprites and tiles/Tilesets/::1723441479
-Dungeon tileset.png::CompressedTexture2D::6483419064348985638::1723359789::1723359789::1::::<><>::
-DungeonTileSetGlitched1.png::CompressedTexture2D::31355023316104435::1723359789::1723359789::1::::<><>::
-DungeonTileSetGlitchedCloseUp.png::CompressedTexture2D::24055473228341469::1723359789::1723359789::1::::<><>::
-DungeonTilesetGlitchedFromAfar.png::CompressedTexture2D::2317098495560213841::1723359789::1723359789::1::::<><>::
-::res://sprites and tiles/Tilesets/garden/::1723441479
-gardentileset.png::CompressedTexture2D::3991911258214511100::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/::1723441479
-README non-RPG Maker engine users.txt::TextFile::-1::1723441479::0::1::::<><>::
-README terms of use.txt::TextFile::-1::1723441479::0::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/32px+VXACE/::1723441479
-$levers.png::CompressedTexture2D::6707094922135438125::1723441479::1723441479::1::::<><>::
-$valves2.png::CompressedTexture2D::7882206239632787424::1723441479::1723441479::1::::<><>::
-$valves.png::CompressedTexture2D::5985381248048484914::1723441479::1723441479::1::::<><>::
-lab_floors.png::CompressedTexture2D::8773889955726897924::1723441479::1723441479::1::::<><>::
-lab_gadgets.png::CompressedTexture2D::2238116898822719805::1723441479::1723441479::1::::<><>::
-Mad_Scientists_Lab_C.png::CompressedTexture2D::5079582985876176650::1723441479::1723441479::1::::<><>::
-Mad_Scientist_Lab_A2.png::CompressedTexture2D::5058313874903286056::1723441479::1723441479::1::::<><>::
-Mad_Scientist_Lab_A4.png::CompressedTexture2D::3436791911131956224::1723441479::1723441479::1::::<><>::
-non-rm-a4-square.png::CompressedTexture2D::6681546488984130781::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/48px+MVMZ/::1723441479
-$levers.png::CompressedTexture2D::3767695091973871231::1723441479::1723441479::1::::<><>::
-$valves2.png::CompressedTexture2D::3669535554009923922::1723441479::1723441479::1::::<><>::
-$valves.png::CompressedTexture2D::7655431484471022447::1723441479::1723441479::1::::<><>::
-Mad_Scientists_Lab_B.png::CompressedTexture2D::1457095258558548985::1723441479::1723441479::1::::<><>::
-Mad_Scientists_Lab_C.png::CompressedTexture2D::8467481354050900358::1723441479::1723441479::1::::<><>::
-Mad_Scientist_Lab_A2.png::CompressedTexture2D::5360975902717779105::1723441479::1723441479::1::::<><>::
-Mad_Scientist_Lab_A4.png::CompressedTexture2D::5697185116543545143::1723441479::1723441479::1::::<><>::
-non-rm-a2-square.png::CompressedTexture2D::7117326278546777072::1723441479::1723441479::1::::<><>::
-non-rm-a4-square.png::CompressedTexture2D::5844205927528105879::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/::1723441479
-package.json::JSON::-1::1723441479::0::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/data/::1723441479
-Actors.json::JSON::-1::1723441479::0::1::::<><>::
-Animations.json::JSON::-1::1723441479::0::1::::<><>::
-Armors.json::JSON::-1::1723441479::0::1::::<><>::
-Classes.json::JSON::-1::1723441479::0::1::::<><>::
-CommonEvents.json::JSON::-1::1723441479::0::1::::<><>::
-Enemies.json::JSON::-1::1723441479::0::1::::<><>::
-Items.json::JSON::-1::1723441479::0::1::::<><>::
-Map001.json::JSON::-1::1723441479::0::1::::<><>::
-Map002.json::JSON::-1::1723441479::0::1::::<><>::
-Map003.json::JSON::-1::1723441479::0::1::::<><>::
-Map004.json::JSON::-1::1723441479::0::1::::<><>::
-Map005.json::JSON::-1::1723441479::0::1::::<><>::
-MapInfos.json::JSON::-1::1723441479::0::1::::<><>::
-Skills.json::JSON::-1::1723441479::0::1::::<><>::
-States.json::JSON::-1::1723441479::0::1::::<><>::
-System.json::JSON::-1::1723441479::0::1::::<><>::
-Tilesets.json::JSON::-1::1723441479::0::1::::<><>::
-Troops.json::JSON::-1::1723441479::0::1::::<><>::
-Weapons.json::JSON::-1::1723441479::0::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/fonts/::1723441479
-mplus-1m-regular.ttf::FontFile::2550114623101952961::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/icon/::1723441479
-icon.png::CompressedTexture2D::3292844608135514552::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/::1723441479
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/characters/::1723441479
-$levers.png::CompressedTexture2D::1661373425447066558::1723441479::1723441479::1::::<><>::
-$valves2.png::CompressedTexture2D::8994489771878111840::1723441479::1723441479::1::::<><>::
-$valves.png::CompressedTexture2D::4884352868343353589::1723441479::1723441479::1::::<><>::
-Actor1.png::CompressedTexture2D::7723155670551469977::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/system/::1723441479
-Balloon.png::CompressedTexture2D::5033400864353739456::1723441479::1723441479::1::::<><>::
-ButtonSet.png::CompressedTexture2D::3876939181860775259::1723441479::1723441479::1::::<><>::
-Damage.png::CompressedTexture2D::3684773186174508553::1723441479::1723441479::1::::<><>::
-GameOver.png::CompressedTexture2D::7605961072208486799::1723441479::1723441479::1::::<><>::
-IconSet.png::CompressedTexture2D::3443887514063614607::1723441479::1723441479::1::::<><>::
-Loading.png::CompressedTexture2D::8017391869756914236::1723441479::1723441479::1::::<><>::
-MadeWithMv.png::CompressedTexture2D::1868496678454985035::1723441479::1723441479::1::::<><>::
-Shadow1.png::CompressedTexture2D::1024604659847893003::1723441479::1723441479::1::::<><>::
-Shadow2.png::CompressedTexture2D::6128874813214538228::1723441479::1723441479::1::::<><>::
-States.png::CompressedTexture2D::2666478351310407765::1723441479::1723441479::1::::<><>::
-Weapons1.png::CompressedTexture2D::3475232803337400910::1723441479::1723441479::1::::<><>::
-Weapons2.png::CompressedTexture2D::8417559409120678061::1723441479::1723441479::1::::<><>::
-Weapons3.png::CompressedTexture2D::7735722330588528055::1723441479::1723441479::1::::<><>::
-Window.png::CompressedTexture2D::1875224878468342307::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/tilesets/::1723441479
-Mad_Scientists_Lab_B.png::CompressedTexture2D::5733233476619668938::1723441479::1723441479::1::::<><>::
-Mad_Scientists_Lab_C.png::CompressedTexture2D::1975622884154022227::1723441479::1723441479::1::::<><>::
-Mad_Scientist_Lab_A2.png::CompressedTexture2D::5076082575869992786::1723441479::1723441479::1::::<><>::
-Mad_Scientist_Lab_A4.png::CompressedTexture2D::8490225760289273837::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/titles1/::1723441479
-black.png::CompressedTexture2D::2428821245996850562::1723441479::1723441479::1::::<><>::
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/js/::1723441479
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/js/libs/::1723441479
-::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/js/plugins/::1723441479
+::res://::1723473083
+::res://backgrounds/::1723416930
+tilescreenbackground.jpg::CompressedTexture2D::4835763439725597291::1723416921::1723416930::1::::<><>::
+::res://butterfly sprite/::1723348361
+blu butterfly concept_back_idle.png::CompressedTexture2D::2162842727124839855::1723348361::1723348361::1::::<><>::
+blu butterfly concept_back_idle.txt::TextFile::-1::1723348361::0::1::::<><>::
+blu butterfly concept_back_walk.png::CompressedTexture2D::3224589728276146083::1723348361::1723348361::1::::<><>::
+blu butterfly concept_back_walk.txt::TextFile::-1::1723348361::0::1::::<><>::
+blu butterfly concept_front_idle.png::CompressedTexture2D::7950095219670868318::1723334844::1723334844::1::::<><>::
+blu butterfly concept_front_idle.txt::TextFile::-1::1723334844::0::1::::<><>::
+blu butterfly concept_front_move.png::CompressedTexture2D::8181149373632129089::1723334844::1723334844::1::::<><>::
+blu butterfly concept_front_move.txt::TextFile::-1::1723334844::0::1::::<><>::
+blu butterfly concept_side_idle.png::CompressedTexture2D::8216663714659965409::1723334844::1723334844::1::::<><>::
+blu butterfly concept_side_idle.txt::TextFile::-1::1723334844::0::1::::<><>::
+blu butterfly concept_side_move.png::CompressedTexture2D::3266695601280094023::1723334844::1723334844::1::::<><>::
+blu butterfly concept_side_move.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://Scenes/::1723473393
+alarm_overlay.tscn::PackedScene::3964526062863702905::1723473393::0::1::::<><>::uid://dm3i1e0qgy124::::res://sprites and tiles/Alarm_overlay.png<>res://Scripts/AlarmOverlay.gd<>uid://dys0qeupo4xym::::res://Scenes/Textvanishnigtimer.tscn
+checpointmanager.tscn::PackedScene::654891945499463543::1723471645::0::1::::<><>::res://Scripts/checpointmanager.gd
+credit_screen.tscn::PackedScene::2855639837089749969::1723473393::0::1::::<><>::res://Scripts/credit_screen.gd
+dungeon_tilemap.tscn::PackedScene::3975265519706147256::1723473392::0::1::::<><>::uid://cymu72is0wcxq::::res://sprites and tiles/Tilesets/Dungeon tileset.png<>uid://lwgp136ppfp::::res://sprites and tiles/Tilesets/DungeonTileSetGlitchedCloseUp.png<>uid://dxaexkwlrg0wu::::res://sprites and tiles/Tilesets/Lab/32px+VXACE/lab_floors.png<>uid://bw4ygvwbeh38s::::res://sprites and tiles/Tilesets/garden/gardentileset.png<>uid://65fpt3hy6b0p::::res://sprites and tiles/Tilesets/Lab/32px+VXACE/lab_gadgets.png
+easy_win_screen.tscn::PackedScene::5762910894447581338::1723473393::0::1::::<><>::res://Scripts/win_screen.gd
+enemy_node.tscn::PackedScene::4071419859714157735::1723473393::0::1::::<><>::res://Scripts/enemy_node.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg
+hard_win_screen.tscn::PackedScene::7337414207800408817::1723472103::0::1::::<><>::res://Scripts/Hard_win_screen.gd
+horizontal_patrolling_enemy.tscn::PackedScene::1521535224498319170::1723473393::0::1::::<><>::res://Scripts/horizontal_patrolling_enemy.gd<>uid://dgtufilx22d8g::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_backwards.png<>uid://ctlwkvr0bdyim::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_forward.png
+level_1.tscn::PackedScene::5106564935098811887::1723473393::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>res://Scripts/easy_winnode.gd<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://dys0qeupo4xym::::res://Scenes/Textvanishnigtimer.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://dk0hscnisbwn8::::res://Scenes/vertical_patrolling_enemy.tscn<>uid://vxbp0b18ycsg::::res://Scenes/horizontal_patrolling_enemy.tscn<>uid://5kce1uniqhvi::::res://Scenes/portal_entrance.tscn<>uid://o0cba7b2chn3::::res://Scenes/portal_exit.tscn<>uid://da621otpkd3wm::::res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png<>uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png<>uid://bd5tjg5qc7d6f::::res://Scenes/room_entrance_detector.tscn<>uid://dm3i1e0qgy124::::res://sprites and tiles/Alarm_overlay.png<>res://Scripts/AlarmOverlay.gd<>uid://bcve2gss22sxo::::res://Scenes/lose_screen.tscn<>uid://jlh8eydg68jj::::res://Scenes/checpointmanager.tscn
+level_2.tscn::PackedScene::288748753192567373::1723473393::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://domfwhib0efct::::res://Scenes/winnode.tscn<>res://Scripts/CanvasLayer.gd<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://dk0hscnisbwn8::::res://Scenes/vertical_patrolling_enemy.tscn
+level_3.tscn::PackedScene::3523055072999065678::1723473393::0::1::::<><>::res://Scripts/level.gd<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>res://Scripts/CanvasLayer.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/easy_winnode.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>res://Scripts/winnode.gd<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png
+level_4.tscn::PackedScene::2772275507467562563::1723473393::0::1::::<><>::res://Scripts/level.gd<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn<>uid://c4grbpjhiwvmk::::res://Scenes/player.tscn<>res://Scripts/easy_winnode.gd<>res://Scripts/CanvasLayer.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>res://Scripts/winnode.gd<>uid://5kce1uniqhvi::::res://Scenes/portal_entrance.tscn<>uid://o0cba7b2chn3::::res://Scenes/portal_exit.tscn<>uid://bhgc5nnhm3ptc::::res://Scenes/winnodwchecker.tscn<>uid://byahxp6qywh2f::::res://Scenes/enemy_node.tscn
+level_select.tscn::PackedScene::8225119533374399304::1723473393::0::1::::<><>::res://Scripts/level_select.gd
+lose_screen.tscn::PackedScene::2570441732012501036::1723473393::0::1::::<><>::res://Scripts/lose_screen.gd
+player.tscn::PackedScene::6821738876167554630::1723473393::0::1::::<><>::res://Scripts/player.gd<>uid://dljc53gxmh5ao::::res://butterfly sprite/blu butterfly concept_front_idle.png<>uid://52xx6ra85evv::::res://butterfly sprite/blu butterfly concept_back_idle.png<>uid://bl7ar0de32e3d::::res://butterfly sprite/blu butterfly concept_back_walk.png<>uid://dotalnfayqg8h::::res://butterfly sprite/blu butterfly concept_front_move.png<>uid://dpchisb2hf8bd::::res://butterfly sprite/blu butterfly concept_side_idle.png<>uid://bmsn88f2xqeix::::res://butterfly sprite/blu butterfly concept_side_move.png
+portal_entrance.tscn::PackedScene::2126439060947902734::1723473392::0::1::::<><>::res://Scripts/Portal_entrance.gd<>uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png
+portal_exit.tscn::PackedScene::1034376524078730578::1723473393::0::1::::<><>::uid://cnyxhynci4t4a::::res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png
+room_entrance_detector.tscn::PackedScene::2660088604451833423::1723439621::0::1::::<><>::
+start_menu.tscn::PackedScene::1750754224916360153::1723473393::0::1::::<><>::res://Scripts/start_menu.gd<>uid://ca5qk13wy0yln::::res://backgrounds/tilescreenbackground.jpg
+testworld.tscn::PackedScene::6702538428138471048::1723334843::0::1::::<><>::uid://c0cqod28lbemx::::res://Scenes/player.tscn<>uid://cymu72is0wcxq::::res://sprites and tiles/Tilesets/Dungeon tileset.png<>res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg<>uid://bwvwbo6gnmn0c::::res://Scenes/dungeon_tilemap.tscn
+Textvanishnigtimer.tscn::PackedScene::8882499837177692480::1723473393::0::1::::<><>::res://Scripts/Alarm_Timer.gd
+vertical_patrolling_enemy.tscn::PackedScene::7913217220067535131::1723473393::0::1::::<><>::res://Scripts/vertical_patrolling_enemy.gd<>uid://dgtufilx22d8g::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_backwards.png<>uid://ctlwkvr0bdyim::::res://sprites and tiles/Animated sprites/Enemies/Enemy_placeholder_forward.png
+winnode.tscn::PackedScene::8167021647591107131::1723473393::0::1::::<><>::res://Scripts/winnode.gd<>uid://b4it6grv2xm0v::::res://sprites and tiles/icon.svg
+winnodwchecker.tscn::PackedScene::2890304566707577988::1723330302::0::1::::<><>::res://Scripts/nextscenechanger.gd
+::res://Scripts/::1723473112
+AlarmOverlay.gd::GDScript::-1::1723440307::0::1::::<>Sprite2D<>::
+Alarm_Timer.gd::GDScript::-1::1723440372::0::1::::<>Timer<>::
+CanvasLayer.gd::GDScript::-1::1723360965::0::1::::<>CanvasLayer<>::
+checpointmanager.gd::GDScript::-1::1723471645::0::1::::<>Node2D<>::
+credit_screen.gd::GDScript::-1::1723249454::0::1::::<>Node2D<>::
+easy_winnode.gd::GDScript::-1::1723267263::0::1::::<>Node2D<>::
+enemy_node.gd::GDScript::-1::1723361021::0::1::::<>Node2D<>::
+Hard_win_screen.gd::GDScript::-1::1723424736::0::1::::<>Control<>::
+horizontal_patrolling_enemy.gd::GDScript::-1::1723436654::0::1::::<>Node2D<>::
+level.gd::GDScript::-1::1723244308::0::1::::<>Node2D<>::
+level_select.gd::GDScript::-1::1723424461::0::1::::<>Control<>::
+lose_screen.gd::GDScript::-1::1723471645::0::1::::<>Control<>::
+nextscenechanger.gd::GDScript::-1::1723473112::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1723471645::0::1::::<>CharacterBody2D<>::
+Portal_entrance.gd::GDScript::-1::1723337588::0::1::::<>Node2D<>::
+start_menu.gd::GDScript::-1::1723473061::0::1::::<>Control<>::
+vertical_patrolling_enemy.gd::GDScript::-1::1723436564::0::1::::<>Node2D<>::
+winnode.gd::GDScript::-1::1723420166::0::1::::<>Node2D<>::
+win_screen.gd::GDScript::-1::1723424736::0::1::::<>Control<>::
+::res://sprites and tiles/::1723438213
+Alarm_overlay.png::CompressedTexture2D::8059863167882494587::1723438157::1723438213::1::::<><>::
+icon.svg::CompressedTexture2D::4439621496095052639::1723241464::1723261766::1::::<><>::
+::res://sprites and tiles/Animated sprites/::1723438205
+::res://sprites and tiles/Animated sprites/arrows/::1723334844
+::res://sprites and tiles/Animated sprites/arrows/blue arrow/::1723334844
+arrow concept blue.png::CompressedTexture2D::2929957232459782019::1723334844::1723334844::1::::<><>::
+arrow concept blue.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Animated sprites/arrows/green arrow/::1723334844
+arrow concept green.png::CompressedTexture2D::8835428912317150231::1723334844::1723334844::1::::<><>::
+arrow concept green.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Animated sprites/arrows/grey arrow/::1723334844
+arrow concept grey.png::CompressedTexture2D::8316675260777948720::1723334844::1723334844::1::::<><>::
+arrow concept grey.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Animated sprites/arrows/purple arrow/::1723334844
+arrow concept green.png::CompressedTexture2D::6666312984705783212::1723334844::1723334844::1::::<><>::
+arrow concept green.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Animated sprites/arrows/yellow arrow/::1723334844
+arrow concept yellow.png::CompressedTexture2D::7224944316274609728::1723334844::1723334844::1::::<><>::
+arrow concept yellow.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Animated sprites/Enemies/::1723473993
+bug_catacher_front_walk.png::CompressedTexture2D::2730443808738073984::1723473953::1723474011::1::::<><>::
+bug_catcher_back_walk.png::CompressedTexture2D::1673191357798835038::1723473993::1723474011::1::::<><>::
+Enemy_placeholder_backwards.png::CompressedTexture2D::7620841997321298332::1723435333::1723435427::1::::<><>::
+Enemy_placeholder_forward.png::CompressedTexture2D::6130492313972782084::1723435192::1723435427::1::::<><>::
+::res://sprites and tiles/Animated sprites/glitches/::1723432590
+Glitched overlay 2.png::CompressedTexture2D::5736251672914605838::1723432590::1723432590::1::::<><>::
+::res://sprites and tiles/Animated sprites/glitches/glitch overlay/::1723432590
+Glitched overlay 2.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Animated sprites/glitches/glitched red arrow/::1723334844
+arrow concept glitched 1.png::CompressedTexture2D::6802539666972195994::1723334844::1723334844::1::::<><>::
+arrow concept glitched 1.txt::TextFile::-1::1723334844::0::1::::<><>::
+::res://sprites and tiles/Tilesets/::1723423650
+Dungeon tileset.png::CompressedTexture2D::6483419064348985638::1723328058::1723328058::1::::<><>::
+DungeonTileSetGlitched1.png::CompressedTexture2D::31355023316104435::1723325349::1723328058::1::::<><>::
+DungeonTileSetGlitchedCloseUp.png::CompressedTexture2D::24055473228341469::1723325349::1723328058::1::::<><>::
+DungeonTilesetGlitchedFromAfar.png::CompressedTexture2D::2317098495560213841::1723325349::1723328058::1::::<><>::
+::res://sprites and tiles/Tilesets/garden/::1723423659
+gardentileset.png::CompressedTexture2D::3991911258214511100::1723423516::1723423659::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/::1723422871
+README non-RPG Maker engine users.txt::TextFile::-1::1723422871::0::1::::<><>::
+README terms of use.txt::TextFile::-1::1723422871::0::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/32px+VXACE/::1723423778
+$levers.png::CompressedTexture2D::6707094922135438125::1723422871::1723422876::1::::<><>::
+$valves2.png::CompressedTexture2D::7882206239632787424::1723422871::1723422876::1::::<><>::
+$valves.png::CompressedTexture2D::5985381248048484914::1723422871::1723422876::1::::<><>::
+lab_floors.png::CompressedTexture2D::8773889955726897924::1723422871::1723423199::1::::<><>::
+lab_gadgets.png::CompressedTexture2D::2238116898822719805::1723422871::1723423778::1::::<><>::
+Mad_Scientists_Lab_C.png::CompressedTexture2D::5079582985876176650::1723422871::1723422876::1::::<><>::
+Mad_Scientist_Lab_A2.png::CompressedTexture2D::5058313874903286056::1723422871::1723422876::1::::<><>::
+Mad_Scientist_Lab_A4.png::CompressedTexture2D::3436791911131956224::1723422871::1723422876::1::::<><>::
+non-rm-a4-square.png::CompressedTexture2D::6681546488984130781::1723422871::1723422877::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/48px+MVMZ/::1723422877
+$levers.png::CompressedTexture2D::3767695091973871231::1723422871::1723422876::1::::<><>::
+$valves2.png::CompressedTexture2D::3669535554009923922::1723422871::1723422876::1::::<><>::
+$valves.png::CompressedTexture2D::7655431484471022447::1723422871::1723422876::1::::<><>::
+Mad_Scientists_Lab_B.png::CompressedTexture2D::1457095258558548985::1723422871::1723422877::1::::<><>::
+Mad_Scientists_Lab_C.png::CompressedTexture2D::8467481354050900358::1723422871::1723422877::1::::<><>::
+Mad_Scientist_Lab_A2.png::CompressedTexture2D::5360975902717779105::1723422871::1723422877::1::::<><>::
+Mad_Scientist_Lab_A4.png::CompressedTexture2D::5697185116543545143::1723422871::1723422877::1::::<><>::
+non-rm-a2-square.png::CompressedTexture2D::7117326278546777072::1723422871::1723422877::1::::<><>::
+non-rm-a4-square.png::CompressedTexture2D::5844205927528105879::1723422871::1723422877::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/::1723422873
+package.json::JSON::-1::1723422871::0::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/audio/::1723422871
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/audio/bgm/::1605116794
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/audio/bgs/::1605116802
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/audio/me/::1605116804
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/audio/se/::1605116810
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/data/::1723422871
+Actors.json::JSON::-1::1723422871::0::1::::<><>::
+Animations.json::JSON::-1::1723422871::0::1::::<><>::
+Armors.json::JSON::-1::1723422871::0::1::::<><>::
+Classes.json::JSON::-1::1723422871::0::1::::<><>::
+CommonEvents.json::JSON::-1::1723422871::0::1::::<><>::
+Enemies.json::JSON::-1::1723422871::0::1::::<><>::
+Items.json::JSON::-1::1723422871::0::1::::<><>::
+Map001.json::JSON::-1::1723422871::0::1::::<><>::
+Map002.json::JSON::-1::1723422871::0::1::::<><>::
+Map003.json::JSON::-1::1723422871::0::1::::<><>::
+Map004.json::JSON::-1::1723422871::0::1::::<><>::
+Map005.json::JSON::-1::1723422871::0::1::::<><>::
+MapInfos.json::JSON::-1::1723422871::0::1::::<><>::
+Skills.json::JSON::-1::1723422871::0::1::::<><>::
+States.json::JSON::-1::1723422871::0::1::::<><>::
+System.json::JSON::-1::1723422871::0::1::::<><>::
+Tilesets.json::JSON::-1::1723422871::0::1::::<><>::
+Troops.json::JSON::-1::1723422871::0::1::::<><>::
+Weapons.json::JSON::-1::1723422871::0::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/fonts/::1723422876
+mplus-1m-regular.ttf::FontFile::2550114623101952961::1723422871::1723422876::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/icon/::1723422877
+icon.png::CompressedTexture2D::3292844608135514552::1723422871::1723422877::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/::1723422872
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/animations/::1605116094
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/battlebacks1/::1605116108
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/battlebacks2/::1605116118
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/characters/::1723422876
+$levers.png::CompressedTexture2D::1661373425447066558::1723422871::1723422876::1::::<><>::
+$valves2.png::CompressedTexture2D::8994489771878111840::1723422872::1723422876::1::::<><>::
+$valves.png::CompressedTexture2D::4884352868343353589::1723422871::1723422876::1::::<><>::
+Actor1.png::CompressedTexture2D::7723155670551469977::1723422872::1723422876::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/enemies/::1605116330
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/faces/::1605116340
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/parallaxes/::1637780458
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/pictures/::1605115884
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/sv_actors/::1605116378
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/sv_enemies/::1605116390
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/system/::1723422877
+Balloon.png::CompressedTexture2D::5033400864353739456::1723422872::1723422876::1::::<><>::
+ButtonSet.png::CompressedTexture2D::3876939181860775259::1723422872::1723422876::1::::<><>::
+Damage.png::CompressedTexture2D::3684773186174508553::1723422872::1723422876::1::::<><>::
+GameOver.png::CompressedTexture2D::7605961072208486799::1723422872::1723422876::1::::<><>::
+IconSet.png::CompressedTexture2D::3443887514063614607::1723422872::1723422876::1::::<><>::
+Loading.png::CompressedTexture2D::8017391869756914236::1723422872::1723422876::1::::<><>::
+MadeWithMv.png::CompressedTexture2D::1868496678454985035::1723422872::1723422876::1::::<><>::
+Shadow1.png::CompressedTexture2D::1024604659847893003::1723422872::1723422876::1::::<><>::
+Shadow2.png::CompressedTexture2D::6128874813214538228::1723422872::1723422876::1::::<><>::
+States.png::CompressedTexture2D::2666478351310407765::1723422872::1723422877::1::::<><>::
+Weapons1.png::CompressedTexture2D::3475232803337400910::1723422872::1723422876::1::::<><>::
+Weapons2.png::CompressedTexture2D::8417559409120678061::1723422872::1723422876::1::::<><>::
+Weapons3.png::CompressedTexture2D::7735722330588528055::1723422872::1723422876::1::::<><>::
+Window.png::CompressedTexture2D::1875224878468342307::1723422872::1723422876::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/tilesets/::1723422877
+Mad_Scientists_Lab_B.png::CompressedTexture2D::5733233476619668938::1723422872::1723422877::1::::<><>::
+Mad_Scientists_Lab_C.png::CompressedTexture2D::1975622884154022227::1723422872::1723422877::1::::<><>::
+Mad_Scientist_Lab_A2.png::CompressedTexture2D::5076082575869992786::1723422872::1723422876::1::::<><>::
+Mad_Scientist_Lab_A4.png::CompressedTexture2D::8490225760289273837::1723422872::1723422876::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/titles1/::1723422876
+black.png::CompressedTexture2D::2428821245996850562::1723422872::1723422876::1::::<><>::
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/img/titles2/::1605116458
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/js/::1723422873
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/js/libs/::1723422872
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/js/plugins/::1723422873
+::res://sprites and tiles/Tilesets/Lab/sample_maps_(RPG_Maker_MV-MZ)/movies/::1605115884
