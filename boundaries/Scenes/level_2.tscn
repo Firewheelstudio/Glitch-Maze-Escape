@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://ed4wde5hlfbp"]
+[gd_scene load_steps=38 format=3 uid="uid://ed4wde5hlfbp"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_jul3b"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_p6gl4"]
@@ -16,6 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="14_530f1"]
 [ext_resource type="AudioStream" uid="uid://dqlitpxhlqltw" path="res://Music/alarm-26718.mp3" id="15_81pli"]
 [ext_resource type="Script" path="res://Scripts/alarm_player.gd" id="16_e2sx3"]
+[ext_resource type="PackedScene" uid="uid://jlh8eydg68jj" path="res://Scenes/checpointmanager.tscn" id="17_k433c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bucl"]
 atlas = ExtResource("9_xc0si")
@@ -151,6 +152,9 @@ animations = [{
 "name": &"default",
 "speed": 12.0
 }]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xb78g"]
+radius = 328.956
 
 [node name="level2" type="Node2D"]
 script = ExtResource("1_jul3b")
@@ -368,6 +372,56 @@ stream = ExtResource("15_81pli")
 volume_db = -1.0
 script = ExtResource("16_e2sx3")
 
+[node name="checkpoints" type="Node2D" parent="."]
+
+[node name="checpointmanager" parent="checkpoints" instance=ExtResource("17_k433c")]
+position = Vector2(3915, 1078)
+
+[node name="checkpoint5" type="Marker2D" parent="checkpoints"]
+position = Vector2(14024.7, -1.31506)
+
+[node name="checkpointarea5" type="Area2D" parent="checkpoints/checkpoint5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/checkpoint5/checkpointarea5"]
+position = Vector2(-6.60742, -7.63712)
+shape = SubResource("CircleShape2D_xb78g")
+
+[node name="checkpoint4" type="Marker2D" parent="checkpoints"]
+position = Vector2(8735.85, 2727.86)
+
+[node name="checkpointarea4" type="Area2D" parent="checkpoints/checkpoint4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/checkpoint4/checkpointarea4"]
+position = Vector2(-6.60742, -7.63712)
+shape = SubResource("CircleShape2D_xb78g")
+
+[node name="checkpoint3" type="Marker2D" parent="checkpoints"]
+position = Vector2(8741.62, 824.318)
+
+[node name="checkpointarea3" type="Area2D" parent="checkpoints/checkpoint3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/checkpoint3/checkpointarea3"]
+position = Vector2(-6.60742, -7.63712)
+shape = SubResource("CircleShape2D_xb78g")
+
+[node name="checkpoint2" type="Marker2D" parent="checkpoints"]
+position = Vector2(8765.62, -847.682)
+
+[node name="checkpointarea2" type="Area2D" parent="checkpoints/checkpoint2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/checkpoint2/checkpointarea2"]
+position = Vector2(-6.60742, -7.63712)
+shape = SubResource("CircleShape2D_xb78g")
+
+[node name="checkpoint1" type="Marker2D" parent="checkpoints"]
+position = Vector2(4082.61, 379.637)
+
+[node name="checkpointarea1" type="Area2D" parent="checkpoints/checkpoint1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="checkpoints/checkpoint1/checkpointarea1"]
+position = Vector2(-6.60742, -7.63712)
+shape = SubResource("CircleShape2D_xb78g")
+
 [connection signal="pressed" from="playernode/Camera2D/CanvasLayer/end_button" to="." method="_on_end_button_pressed"]
 [connection signal="pressed" from="playernode/Camera2D/CanvasLayer/level_select_button" to="." method="_on_level_select_button_pressed"]
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
@@ -412,3 +466,8 @@ script = ExtResource("16_e2sx3")
 [connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="AlarmOverlay3" method="_on_room_entrance_detector_body_entered"]
 [connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="AlarmOverlay3/Timer2" method="_on_room_entrance_detector_body_entered"]
 [connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="checkpoints/checkpoint5/checkpointarea5" to="checkpoints/checpointmanager" method="_on_checkpointarea_5_body_entered"]
+[connection signal="body_entered" from="checkpoints/checkpoint4/checkpointarea4" to="checkpoints/checpointmanager" method="_on_checkpointarea_4_body_entered"]
+[connection signal="body_entered" from="checkpoints/checkpoint3/checkpointarea3" to="checkpoints/checpointmanager" method="_on_checkpointarea_3_body_entered"]
+[connection signal="body_entered" from="checkpoints/checkpoint2/checkpointarea2" to="checkpoints/checpointmanager" method="_on_checkpointarea_2_body_entered"]
+[connection signal="body_entered" from="checkpoints/checkpoint1/checkpointarea1" to="checkpoints/checpointmanager" method="_on_checkpointarea_1_body_entered"]

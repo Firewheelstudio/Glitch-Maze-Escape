@@ -1,7 +1,7 @@
+Node2D
 Label
 AudioStreamPlayer
 CanvasLayer
-Node2D
 CollisionShape2D
 Area2D
 Marker2D
@@ -12,4 +12,3 @@ ParallaxBackground
 Button
 MenuBar
 CharacterBody2D
-Timer
