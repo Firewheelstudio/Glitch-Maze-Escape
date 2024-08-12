@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://bqgug45jsb1io"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_i0q0v"]
-[ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="2_n0vk6"]
+[ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="2_n0vk6"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="4_6pqmu"]
 [ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="4_aqkhn"]
 [ext_resource type="Script" path="res://Scripts/easy_winnode.gd" id="4_srdg2"]
@@ -108,6 +108,27 @@ offset_right = 2008.0
 offset_bottom = 662.0
 theme_override_font_sizes/font_size = 40
 text = "What if you chose the path that was left for you?"
+
+[node name="Label3" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 986.0
+offset_top = 809.0
+offset_right = 1308.0
+offset_bottom = 832.0
+text = "You lost. Now you'll never find \"Freedom\""
+
+[node name="end_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 1154.0
+offset_top = 891.0
+offset_right = 1242.0
+offset_bottom = 922.0
+text = "end"
+
+[node name="level_select_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 1085.0
+offset_top = 946.0
+offset_right = 1179.0
+offset_bottom = 977.0
+text = "level select"
 
 [node name="easy_winnode" type="Node2D" parent="."]
 position = Vector2(3099, 1019)

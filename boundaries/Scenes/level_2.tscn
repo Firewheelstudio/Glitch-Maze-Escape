@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ed4wde5hlfbp"]
+[gd_scene load_steps=8 format=3 uid="uid://ed4wde5hlfbp"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_jul3b"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_p6gl4"]
 [ext_resource type="PackedScene" uid="uid://domfwhib0efct" path="res://Scenes/winnode.tscn" id="4_0h2wf"]
-[ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="4_wxrqk"]
+[ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="4_lboq6"]
+[ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="4_wxrqk"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="5_gyl4v"]
 [ext_resource type="PackedScene" uid="uid://dk0hscnisbwn8" path="res://Scenes/vertical_patrolling_enemy.tscn" id="6_t306k"]
 
@@ -20,6 +21,54 @@ position = Vector2(-112, 369)
 
 [node name="Camera2D" type="Camera2D" parent="playernode"]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="playernode/Camera2D"]
+script = ExtResource("4_lboq6")
+
+[node name="Label3" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 197.0
+offset_top = 505.0
+offset_right = 519.0
+offset_bottom = 528.0
+text = "You lost. Now you'll never find \"Freedom\""
+
+[node name="end_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 365.0
+offset_top = 587.0
+offset_right = 453.0
+offset_bottom = 618.0
+text = "end"
+
+[node name="level_select_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 296.0
+offset_top = 642.0
+offset_right = 390.0
+offset_bottom = 673.0
+text = "level select"
+
+[node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 516.0
+offset_top = 548.0
+offset_right = 813.0
+offset_bottom = 661.0
+theme_override_font_sizes/font_size = 40
+text = "Interesting.."
+
+[node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 274.0
+offset_top = 315.0
+offset_right = 1346.0
+offset_bottom = 486.0
+theme_override_font_sizes/font_size = 40
+text = "Hey guys anybody want to make a text for this level?"
+
+[node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = -45.0
+offset_top = 980.0
+offset_right = 1727.0
+offset_bottom = 1093.0
+theme_override_font_sizes/font_size = 40
+text = "Hey guys anybody want to make a text for this level?"
+
 [node name="winnode" parent="." instance=ExtResource("4_0h2wf")]
 visible = false
 position = Vector2(18784, -1257)
@@ -34,3 +83,5 @@ position = Vector2(14459, 70)
 
 [node name="vertical_patrolling_enemy5" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(16366, 33)
+
+[connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]

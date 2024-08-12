@@ -1,3 +1,4 @@
+CanvasLayer
 Node2D
 CollisionShape2D
 Area2D
@@ -9,6 +10,5 @@ ParallaxBackground
 Button
 MenuBar
 CharacterBody2D
-CanvasLayer
 Timer
 Label

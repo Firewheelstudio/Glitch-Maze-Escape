@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_dubdf"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_f4w6k"]
-[ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="4_27mix"]
+[ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="4_27mix"]
 [ext_resource type="Script" path="res://Scripts/easy_winnode.gd" id="5_5vboa"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="5_griov"]
 [ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="6_gwqmq"]
@@ -56,6 +56,27 @@ offset_right = 1783.0
 offset_bottom = 660.0
 theme_override_font_sizes/font_size = 40
 text = "Try to escape. will you exit when you're told or go your own way?"
+
+[node name="Label3" type="Label" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 309.0
+offset_top = 136.0
+offset_right = 349.0
+offset_bottom = 159.0
+text = "You lost. Now you'll never find \"Freedom\""
+
+[node name="end_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 477.0
+offset_top = 218.0
+offset_right = 565.0
+offset_bottom = 249.0
+text = "end"
+
+[node name="level_select_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
+offset_left = 408.0
+offset_top = 273.0
+offset_right = 502.0
+offset_bottom = 304.0
+text = "level select"
 
 [node name="easy_winnode lvl 3" type="Node2D" parent="."]
 position = Vector2(3098, 2297)

@@ -19,7 +19,7 @@ func _quit():
 	get_tree().quit() # Replace with function body.
 
 func _go_to_credits():
-	get_tree().change_scene_to_file("res://credit_screen.tscn")
+	get_tree().change_scene_to_file("res://Scenes/credit_screen.tscn")
 
 func _on_start_button_pressed():
 	_start()

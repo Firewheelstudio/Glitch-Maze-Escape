@@ -14,3 +14,7 @@ res://Scenes/Textvanishnigtimer.tscn
 res://Scenes/lose_screen.tscn
 res://Scenes/player.tscn
 res://Scenes/level_1.tscn
+res://Scenes/level_2.tscn
+res://Scenes/level_3.tscn
+res://Scenes/level_4.tscn
+res://Scenes/credit_screen.tscn
