@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c0cqod28lbemx" path="res://Scenes/player.tscn" id="2_n0vk6"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="4_6pqmu"]
 [ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="4_aqkhn"]
-[ext_resource type="Script" path="res://Scripts/easy_winnode lvl 3.gd" id="4_srdg2"]
+[ext_resource type="Script" path="res://Scripts/easy_winnode.gd" id="4_srdg2"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="6_0tyuo"]
 [ext_resource type="Script" path="res://Scripts/winnode.gd" id="7_3oty0"]
 [ext_resource type="PackedScene" uid="uid://bhgc5nnhm3ptc" path="res://Scenes/winnodwchecker.tscn" id="8_gss23"]

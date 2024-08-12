@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://byahxp6qywh2f"]
 
-[ext_resource type="Script" path="res://enemy_node.gd" id="1_lnlou"]
+[ext_resource type="Script" path="res://Scripts/enemy_node.gd" id="1_vitd6"]
 [ext_resource type="Texture2D" uid="uid://b4it6grv2xm0v" path="res://sprites and tiles/icon.svg" id="2_b77te"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t1wie"]
 radius = 80.0
 
 [node name="enemy_node" type="Node2D"]
-script = ExtResource("1_lnlou")
+script = ExtResource("1_vitd6")
 
 [node name="Area2D" type="Area2D" parent="."]
 

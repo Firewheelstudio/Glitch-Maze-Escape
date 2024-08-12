@@ -37,10 +37,28 @@ func _process(delta):
 #		velocity = velocity.limit_length(speed)
 	move_and_slide()
 
-
+# signal from portal to teleport
 func _on_portal_entrance_portal_entered():
 	position = $"../portal_exit".position # Replace with function body.
 
 
+# signals from enemies to tell player they've lost
 func _on_enemy_node_captured_player():
 	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_vertical_patrolling_enemy_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_horizontal_patrolling_enemy_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_horizontal_patrolling_enemy_2_player_captured():
+		get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_horizontal_patrolling_enemy_3_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_vertical_patrolling_enemy_2_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_vertical_patrolling_enemy_4_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_vertical_patrolling_enemy_5_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+func _on_vertical_patrolling_enemy_6_player_captured():
+	get_tree().change_scene_to_file("res://Scenes/lose_screen.tscn") # Replace with function body.
+	
