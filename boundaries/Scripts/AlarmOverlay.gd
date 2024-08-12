@@ -16,12 +16,25 @@ func _process(delta):
 func _on_timer_timeout():
 	modulate_dir *= -1 # Replace with function body.
 
+func activate_alarm(plyr):
+	if plyr.name == "playernode":
+		alarm_active = true
 
 func _on_room_entrance_detector_body_entered(body):
-	if body.name == "playernode":
-		alarm_active = true # Replace with function body.
+	activate_alarm(body) # Replace with function body.
 
 
 func _on_room_entrance_detector_2_body_entered(body):
-	if body.name == "playernode":
-		alarm_active = true # Replace with function body.
+	activate_alarm(body) # Replace with function body.
+
+
+func _on_room_entrance_detector_3_body_entered(body):
+	activate_alarm(body) # Replace with function body.
+
+
+func _on_room_entrance_detector_4_body_entered(body):
+	activate_alarm(body) # Replace with function body.
+
+
+func _on_timer_2_timeout():
+	modulate_dir *= -1 # Replace with function body.

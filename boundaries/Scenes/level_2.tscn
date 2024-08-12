@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://ed4wde5hlfbp"]
+[gd_scene load_steps=36 format=3 uid="uid://ed4wde5hlfbp"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_jul3b"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_p6gl4"]
@@ -10,6 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://vxbp0b18ycsg" path="res://Scenes/horizontal_patrolling_enemy.tscn" id="8_6o77f"]
 [ext_resource type="Texture2D" uid="uid://da621otpkd3wm" path="res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png" id="9_xc0si"]
 [ext_resource type="Texture2D" uid="uid://cnyxhynci4t4a" path="res://sprites and tiles/Animated sprites/glitches/Glitched overlay 2.png" id="10_wfy05"]
+[ext_resource type="PackedScene" uid="uid://bwqpfu1mxa3tt" path="res://Scenes/alarm_overlay.tscn" id="11_m5nk8"]
+[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="12_i25d0"]
+[ext_resource type="PackedScene" uid="uid://bd5tjg5qc7d6f" path="res://Scenes/room_entrance_detector.tscn" id="13_n785b"]
+[ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="14_530f1"]
+[ext_resource type="AudioStream" uid="uid://dqlitpxhlqltw" path="res://Music/alarm-26718.mp3" id="15_81pli"]
+[ext_resource type="Script" path="res://Scripts/alarm_player.gd" id="16_e2sx3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bucl"]
 atlas = ExtResource("9_xc0si")
@@ -219,14 +225,8 @@ position = Vector2(18784, -1257)
 [node name="vertical_patrolling_enemy3" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(18125, 285)
 
-[node name="vertical_patrolling_enemy3" parent="vertical_patrolling_enemy3" instance=ExtResource("6_t306k")]
-position = Vector2(-16113, 904)
-
 [node name="vertical_patrolling_enemy4" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(14459, 70)
-
-[node name="vertical_patrolling_enemy4" parent="vertical_patrolling_enemy4" instance=ExtResource("6_t306k")]
-position = Vector2(-9563, -380)
 
 [node name="vertical_patrolling_enemy5" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(16366, 33)
@@ -236,9 +236,6 @@ position = Vector2(3144, 636)
 
 [node name="horizontal_patrolling_enemy4" parent="." instance=ExtResource("8_6o77f")]
 position = Vector2(3545, -493)
-
-[node name="horizontal_patrolling_enemy4" parent="horizontal_patrolling_enemy4" instance=ExtResource("8_6o77f")]
-position = Vector2(2367, -61)
 
 [node name="YellowArrow2" type="AnimatedSprite2D" parent="."]
 position = Vector2(4318, 1115)
@@ -258,9 +255,6 @@ autoplay = "default"
 [node name="horizontal_patrolling_enemy5" parent="." instance=ExtResource("8_6o77f")]
 position = Vector2(4689, 2126)
 
-[node name="horizontal_patrolling_enemy4" parent="horizontal_patrolling_enemy5" instance=ExtResource("8_6o77f")]
-position = Vector2(3956, 180)
-
 [node name="YellowArrow3" type="AnimatedSprite2D" parent="."]
 position = Vector2(8727, -1543)
 rotation = -1.43201
@@ -279,14 +273,8 @@ sprite_frames = SubResource("SpriteFrames_ewbfy")
 [node name="vertical_patrolling_enemy7" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(13509, 1846)
 
-[node name="vertical_patrolling_enemy4" parent="vertical_patrolling_enemy7" instance=ExtResource("6_t306k")]
-position = Vector2(-1149, -991)
-
 [node name="vertical_patrolling_enemy8" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(14459, 70)
-
-[node name="vertical_patrolling_enemy4" parent="vertical_patrolling_enemy8" instance=ExtResource("6_t306k")]
-position = Vector2(-9563, -380)
 
 [node name="vertical_patrolling_enemy9" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(11925, 2684)
@@ -296,9 +284,6 @@ position = Vector2(9468, 2744)
 
 [node name="horizontal_patrolling_enemy6" parent="." instance=ExtResource("8_6o77f")]
 position = Vector2(10629, 718)
-
-[node name="horizontal_patrolling_enemy6" parent="horizontal_patrolling_enemy6" instance=ExtResource("8_6o77f")]
-position = Vector2(-1216, 573)
 
 [node name="horizontal_patrolling_enemy7" parent="." instance=ExtResource("8_6o77f")]
 position = Vector2(9289, 73)
@@ -315,4 +300,115 @@ position = Vector2(7479, -728)
 [node name="vertical_patrolling_enemy13" parent="." instance=ExtResource("6_t306k")]
 position = Vector2(7309, 2648)
 
+[node name="vertical_patrolling_enemy14" parent="." instance=ExtResource("6_t306k")]
+position = Vector2(2012, 1189)
+
+[node name="vertical_patrolling_enemy15" parent="." instance=ExtResource("6_t306k")]
+position = Vector2(4896, -310)
+
+[node name="horizontal_patrolling_enemy9" parent="." instance=ExtResource("8_6o77f")]
+position = Vector2(5912, -554)
+
+[node name="horizontal_patrolling_enemy10" parent="." instance=ExtResource("8_6o77f")]
+position = Vector2(8645, 2306)
+
+[node name="vertical_patrolling_enemy16" parent="." instance=ExtResource("6_t306k")]
+position = Vector2(12360, 855)
+
+[node name="vertical_patrolling_enemy17" parent="." instance=ExtResource("6_t306k")]
+position = Vector2(4896, -310)
+
+[node name="horizontal_patrolling_enemy11" parent="." instance=ExtResource("8_6o77f")]
+position = Vector2(9413, 1291)
+
+[node name="AlarmOverlay" parent="." instance=ExtResource("11_m5nk8")]
+position = Vector2(5255, 1881.75)
+scale = Vector2(13.9219, 20.3555)
+
+[node name="Timer2" parent="AlarmOverlay" instance=ExtResource("12_i25d0")]
+
+[node name="room_entrance_detector" parent="AlarmOverlay" instance=ExtResource("13_n785b")]
+position = Vector2(-47.5511, -47.6899)
+scale = Vector2(1.56479, 1.68052)
+
+[node name="AlarmOverlay2" parent="." instance=ExtResource("11_m5nk8")]
+position = Vector2(11502, 378)
+scale = Vector2(38.7266, 42.0303)
+
+[node name="Timer2" parent="AlarmOverlay2" instance=ExtResource("12_i25d0")]
+
+[node name="room_entrance_detector" parent="AlarmOverlay2" instance=ExtResource("13_n785b")]
+position = Vector2(-54.136, -27.9337)
+scale = Vector2(1.56479, 1.68052)
+
+[node name="room_entrance_detector2" parent="AlarmOverlay2" instance=ExtResource("13_n785b")]
+position = Vector2(-51.1794, 53.0332)
+scale = Vector2(1.56479, 1.68052)
+
+[node name="room_entrance_detector3" parent="AlarmOverlay2" instance=ExtResource("13_n785b")]
+position = Vector2(-54.1231, 10.4449)
+scale = Vector2(1.56479, 1.68052)
+
+[node name="AlarmOverlay3" parent="." instance=ExtResource("11_m5nk8")]
+position = Vector2(5268, -1230)
+scale = Vector2(13.9219, 20.3555)
+
+[node name="Timer2" parent="AlarmOverlay3" instance=ExtResource("12_i25d0")]
+
+[node name="room_entrance_detector" parent="AlarmOverlay3" instance=ExtResource("13_n785b")]
+position = Vector2(-48.4848, 46.5231)
+scale = Vector2(1.56479, 1.68052)
+
+[node name="bg_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_530f1")
+autoplay = true
+
+[node name="alarm_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_81pli")
+volume_db = -1.0
+script = ExtResource("16_e2sx3")
+
+[connection signal="pressed" from="playernode/Camera2D/CanvasLayer/end_button" to="." method="_on_end_button_pressed"]
+[connection signal="pressed" from="playernode/Camera2D/CanvasLayer/level_select_button" to="." method="_on_level_select_button_pressed"]
 [connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
+[connection signal="player_captured" from="vertical_patrolling_enemy3" to="playernode" method="_on_vertical_patrolling_enemy_3_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy4" to="playernode" method="_on_vertical_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy5" to="playernode" method="_on_vertical_patrolling_enemy_5_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy6" to="playernode" method="_on_vertical_patrolling_enemy_6_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy4" to="playernode" method="_on_horizontal_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy5" to="." method="_on_horizontal_patrolling_enemy_5_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy7" to="playernode" method="_on_vertical_patrolling_enemy_7_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy8" to="playernode" method="_on_vertical_patrolling_enemy_8_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy9" to="playernode" method="_on_vertical_patrolling_enemy_9_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy10" to="." method="_on_vertical_patrolling_enemy_10_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy6" to="playernode" method="_on_horizontal_patrolling_enemy_6_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy7" to="." method="_on_horizontal_patrolling_enemy_7_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy11" to="." method="_on_vertical_patrolling_enemy_11_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy8" to="playernode" method="_on_horizontal_patrolling_enemy_8_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy12" to="playernode" method="_on_vertical_patrolling_enemy_12_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy13" to="." method="_on_vertical_patrolling_enemy_13_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy14" to="playernode" method="_on_vertical_patrolling_enemy_3_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy15" to="playernode" method="_on_vertical_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy9" to="." method="_on_horizontal_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy10" to="." method="_on_horizontal_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy16" to="playernode" method="_on_vertical_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="vertical_patrolling_enemy17" to="playernode" method="_on_vertical_patrolling_enemy_4_player_captured"]
+[connection signal="player_captured" from="horizontal_patrolling_enemy11" to="." method="_on_horizontal_patrolling_enemy_6_player_captured"]
+[connection signal="timeout" from="AlarmOverlay/Timer2" to="AlarmOverlay" method="_on_timer_2_timeout"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector" to="AlarmOverlay" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector" to="AlarmOverlay/Timer2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="timeout" from="AlarmOverlay2/Timer2" to="AlarmOverlay2" method="_on_timer_2_timeout"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector" to="AlarmOverlay2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector" to="AlarmOverlay2/Timer2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector2" to="AlarmOverlay2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector2" to="AlarmOverlay2/Timer2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector2" to="alarm_player" method="_on_room_entrance_detector_2_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector3" to="AlarmOverlay2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector3" to="AlarmOverlay2/Timer2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector3" to="alarm_player" method="_on_room_entrance_detector_3_body_entered"]
+[connection signal="timeout" from="AlarmOverlay3/Timer2" to="AlarmOverlay3" method="_on_timer_2_timeout"]
+[connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="AlarmOverlay3" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="AlarmOverlay3/Timer2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]

@@ -42,15 +42,6 @@ offset_right = 72.0
 offset_bottom = 111.0
 text = "level 3"
 
-[node name="level4Button" type="Button" parent="MenuBar"]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 117.0
-offset_right = 72.0
-offset_bottom = 148.0
-text = "level 4"
-
 [connection signal="pressed" from="MenuBar/level1Button" to="." method="_on_level_1_button_pressed"]
 [connection signal="pressed" from="MenuBar/level2Button" to="." method="_on_level_2_button_pressed"]
 [connection signal="pressed" from="MenuBar/level3Button" to="." method="_on_level_3_button_pressed"]
-[connection signal="pressed" from="MenuBar/level4Button" to="." method="_on_level_4_button_pressed"]

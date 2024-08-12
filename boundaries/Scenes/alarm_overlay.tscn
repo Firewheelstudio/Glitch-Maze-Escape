@@ -2,7 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dm3i1e0qgy124" path="res://sprites and tiles/Alarm_overlay.png" id="1_iehuh"]
 [ext_resource type="Script" path="res://Scripts/AlarmOverlay.gd" id="2_5xmfl"]
-[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/Textvanishnigtimer.tscn" id="3_mrsqq"]
+[ext_resource type="PackedScene" uid="uid://bl4jmu01fi53k" path="res://Scenes/alarm_timer.tscn" id="3_mrsqq"]
+
 
 [node name="AlarmOverlay" type="Sprite2D"]
 position = Vector2(6867, 832)

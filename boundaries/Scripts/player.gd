@@ -3,6 +3,9 @@ var speed = 800
 var accel = 1500
 var canmove = false
 
+func _on_portal_entrance_portal_entered():
+	position = $"../portal_exit".position 
+
 
 var placetorespawn  #it contains coords of current checpoint
 func _ready():
@@ -44,8 +47,7 @@ func _process(delta):
 	move_and_slide()
 
 # signal from portal to teleport
-func _on_portal_entrance_portal_entered():
-	position = $"../portal_exit".position # Replace with function body.
+# Replace with function body.
 
 
 # signals from enemies to tell player they've lost
@@ -67,6 +69,7 @@ func _on_vertical_patrolling_enemy_5_player_captured():
 	death()
 func _on_vertical_patrolling_enemy_6_player_captured():
 	death()
+
 func death():
 	canmove = false
 	$Camera2D/CanvasLayer/Label3.show()
@@ -79,3 +82,35 @@ func respawn():
 	$Camera2D/CanvasLayer/level_select_button.hide()
 	canmove = true
 	velocity = Vector2.ZERO
+
+
+func _on_vertical_patrolling_enemy_3_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_4_player_captured():
+	death() # Replace with function body.
+
+
+func _on_vertical_patrolling_enemy_7_player_captured():
+	death() # Replace with function body.
+
+
+func _on_vertical_patrolling_enemy_8_player_captured():
+	death() # Replace with function body.
+
+
+func _on_vertical_patrolling_enemy_9_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_6_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_8_player_captured():
+	death() # Replace with function body.
+
+
+func _on_vertical_patrolling_enemy_12_player_captured():
+	death() # Replace with function body.

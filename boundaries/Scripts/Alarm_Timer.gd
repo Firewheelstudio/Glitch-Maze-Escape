@@ -10,12 +10,21 @@ func _ready():
 func _process(delta):
 	pass
 
-
+func set_alarm_timer(plyr):
+	if plyr.name == "playernode":
+		start(2)
+		
 func _on_room_entrance_detector_body_entered(body):
-	if body.name == "playernode":
-		start(2) # 2 second timer for alarm overlay
+	set_alarm_timer(body)# 2 second timer for alarm overlay
 
 
 func _on_room_entrance_detector_2_body_entered(body):
-	if body.name == "playernode":
-		start(2)  # Replace with function body.
+	set_alarm_timer(body)  # Replace with function body.
+
+
+func _on_room_entrance_detector_3_body_entered(body):
+	set_alarm_timer(body) # Replace with function body.
+
+
+func _on_room_entrance_detector_4_body_entered(body):
+	set_alarm_timer(body) # Replace with function body.

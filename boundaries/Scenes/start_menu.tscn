@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://y7cwwidkkyqj"]
+[gd_scene load_steps=6 format=3 uid="uid://y7cwwidkkyqj"]
 
 [ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_cwyjk"]
 [ext_resource type="Texture2D" uid="uid://ca5qk13wy0yln" path="res://backgrounds/tilescreenbackground.jpg" id="2_1f11x"]
+[ext_resource type="AudioStream" uid="uid://bgah1faqpv03t" path="res://Music/title_music.mp3" id="3_k2pjl"]
+[ext_resource type="FontFile" uid="uid://cr8ui67plwu2e" path="res://fonts/GlitchGoblin-2O87v.ttf" id="4_aew3g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lfr60"]
+font = ExtResource("4_aew3g")
+font_size = 82
+font_color = Color(0, 0, 1, 1)
+shadow_size = 4
+shadow_color = Color(0.992157, 0, 0, 1)
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -66,6 +75,19 @@ offset_right = 371.0
 offset_bottom = 353.0
 text = "level select
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_k2pjl")
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 228.0
+offset_right = 1144.0
+offset_bottom = 322.0
+text = "A bug in the system"
+label_settings = SubResource("LabelSettings_lfr60")
 
 [connection signal="pressed" from="MenuBar/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuBar/CloseButton" to="." method="_on_close_button_pressed"]
