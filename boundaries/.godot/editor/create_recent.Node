@@ -1,7 +1,7 @@
+Node2D
 Button
 AudioStreamPlayer
 TextureRect
-Node2D
 Label
 CanvasLayer
 CollisionShape2D
