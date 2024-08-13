@@ -39,10 +39,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.006
 anchor_bottom = 12.606
-offset_left = -269.0
-offset_top = -10.0
-offset_right = -1269.24
-offset_bottom = -455.24
+offset_left = -251.0
+offset_top = -33.0
+offset_right = -1251.24
+offset_bottom = -478.24
 text = "Play the Game"
 
 [node name="CloseButton" type="Button" parent="MenuBar"]
@@ -50,10 +50,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.006
 anchor_bottom = 12.606
-offset_left = 221.0
-offset_top = -5.0
-offset_right = -803.24
-offset_bottom = -450.24
+offset_left = 222.0
+offset_top = 87.0
+offset_right = -802.24
+offset_bottom = -358.24
 text = "Exit"
 
 [node name="CreditsButton" type="Button" parent="MenuBar"]
@@ -61,18 +61,18 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.006
 anchor_bottom = 12.606
-offset_left = -11.0
-offset_top = -4.0
-offset_right = -1035.24
-offset_bottom = -449.24
+offset_left = -106.0
+offset_top = 75.0
+offset_right = -1130.24
+offset_bottom = -370.24
 text = "credits"
 
 [node name="levelselectbutton" type="Button" parent="MenuBar"]
 layout_mode = 0
-offset_left = -263.0
-offset_top = 105.0
-offset_right = -169.0
-offset_bottom = 136.0
+offset_left = -171.0
+offset_top = 34.0
+offset_right = -77.0
+offset_bottom = 65.0
 text = "level select
 "
 
@@ -83,11 +83,12 @@ autoplay = true
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 75.0
-offset_top = 69.0
-offset_right = 579.0
-offset_bottom = 127.0
-text = "A bug in the system"
+offset_left = 46.0
+offset_top = 44.0
+offset_right = 550.0
+offset_bottom = 157.0
+text = "A bug in 
+the system"
 label_settings = SubResource("LabelSettings_lfr60")
 
 [connection signal="pressed" from="MenuBar/StartButton" to="." method="_on_start_button_pressed"]

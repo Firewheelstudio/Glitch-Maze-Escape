@@ -210,7 +210,6 @@ offset_top = 980.0
 offset_right = 1727.0
 offset_bottom = 1093.0
 theme_override_font_sizes/font_size = 40
-text = "Hey guys anybody want to make a text for this level?"
 
 [node name="winnode" parent="." instance=ExtResource("4_0h2wf")]
 visible = false
