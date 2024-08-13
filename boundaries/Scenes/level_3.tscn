@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bqgug45jsb1io"]
+[gd_scene load_steps=41 format=3 uid="uid://bqgug45jsb1io"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_i0q0v"]
 [ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="2_n0vk6"]
@@ -11,6 +11,14 @@
 [ext_resource type="Texture2D" uid="uid://da621otpkd3wm" path="res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png" id="9_yqibn"]
 [ext_resource type="PackedScene" uid="uid://dk0hscnisbwn8" path="res://Scenes/vertical_patrolling_enemy.tscn" id="10_dhhp6"]
 [ext_resource type="PackedScene" uid="uid://vxbp0b18ycsg" path="res://Scenes/horizontal_patrolling_enemy.tscn" id="11_a0eyo"]
+[ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="12_kpfej"]
+[ext_resource type="AudioStream" uid="uid://dvxt1htsrfoyv" path="res://Music/alarm-26718.wav" id="13_cc7mp"]
+[ext_resource type="Script" path="res://Scripts/alarm_player.gd" id="14_7vduy"]
+[ext_resource type="PackedScene" uid="uid://bwqpfu1mxa3tt" path="res://Scenes/alarm_overlay.tscn" id="15_uql6o"]
+[ext_resource type="PackedScene" uid="uid://bd5tjg5qc7d6f" path="res://Scenes/room_entrance_detector.tscn" id="16_wqjrp"]
+[ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="17_ahbc0"]
+[ext_resource type="PackedScene" uid="uid://5kce1uniqhvi" path="res://Scenes/portal_entrance.tscn" id="18_08opo"]
+[ext_resource type="PackedScene" uid="uid://o0cba7b2chn3" path="res://Scenes/portal_exit.tscn" id="19_pw3b6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b33ty"]
 
@@ -244,6 +252,7 @@ rotation = 2.79346
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="YellowArrow4" type="AnimatedSprite2D" parent="."]
 position = Vector2(1319, -1898)
@@ -318,6 +327,7 @@ rotation = 2.79346
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="YellowArrow6" type="AnimatedSprite2D" parent="."]
 position = Vector2(4542, -11469)
@@ -325,8 +335,107 @@ rotation = 2.79346
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="horizontal_patrolling_enemy16" parent="." instance=ExtResource("11_a0eyo")]
 position = Vector2(975, -2703)
 
+[node name="bg_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_kpfej")
+volume_db = -22.355
+autoplay = true
+
+[node name="alarm_player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_cc7mp")
+volume_db = -21.382
+script = ExtResource("14_7vduy")
+
+[node name="AlarmOverlay" parent="." instance=ExtResource("15_uql6o")]
+position = Vector2(1102, -2081)
+scale = Vector2(38.9727, 22.9024)
+
+[node name="room_entrance_detector2" parent="AlarmOverlay" instance=ExtResource("16_wqjrp")]
+position = Vector2(-54.4997, 69.9054)
+scale = Vector2(0.51318, 0.873272)
+
+[node name="room_entrance_detector" parent="AlarmOverlay" instance=ExtResource("16_wqjrp")]
+position = Vector2(55.3208, 68.4209)
+scale = Vector2(0.51318, 0.873272)
+
+[node name="room_entrance_detector3" parent="AlarmOverlay" instance=ExtResource("16_wqjrp")]
+position = Vector2(-1.89877, 42.7467)
+scale = Vector2(1, 3)
+
+[node name="Timer" parent="." instance=ExtResource("17_ahbc0")]
+autostart = false
+
+[node name="AlarmOverlay2" parent="." instance=ExtResource("15_uql6o")]
+position = Vector2(5006, -5652)
+scale = Vector2(22.5616, 31.2581)
+
+[node name="room_entrance_detector" parent="AlarmOverlay2" instance=ExtResource("16_wqjrp")]
+position = Vector2(-61.422, 3.63173)
+scale = Vector2(1, 5)
+
+[node name="AlarmOverlay3" parent="." instance=ExtResource("15_uql6o")]
+position = Vector2(3309.5, -13444.3)
+scale = Vector2(39.9922, 24.8947)
+
+[node name="room_entrance_detector" parent="AlarmOverlay3" instance=ExtResource("16_wqjrp")]
+position = Vector2(40.7705, 38.0507)
+scale = Vector2(1, 3)
+
+[node name="Portal_entrance" parent="." instance=ExtResource("18_08opo")]
+position = Vector2(2760, -112)
+
+[node name="portal_exit" parent="." instance=ExtResource("19_pw3b6")]
+position = Vector2(2390, -3810)
+
+[node name="Portal_entrance2" parent="." instance=ExtResource("18_08opo")]
+position = Vector2(3363, -5088)
+
+[node name="portal_exit2" parent="." instance=ExtResource("19_pw3b6")]
+position = Vector2(6270, -10655)
+
+[node name="Portal_entrance3" parent="." instance=ExtResource("18_08opo")]
+position = Vector2(2226, -5052)
+
+[node name="portal_exit3" parent="." instance=ExtResource("19_pw3b6")]
+position = Vector2(1020, -6782)
+
+[node name="Portal_entrance4" parent="." instance=ExtResource("18_08opo")]
+position = Vector2(-306, -48)
+
+[node name="portal_exit4" parent="." instance=ExtResource("19_pw3b6")]
+position = Vector2(4452, -4269)
+
+[node name="Portal_entrance5" parent="." instance=ExtResource("18_08opo")]
+position = Vector2(4435, -7882)
+
+[node name="portal_exit5" parent="." instance=ExtResource("19_pw3b6")]
+position = Vector2(1792, -13002)
+
 [connection signal="body_entered" from="winnode/Area2D" to="winnode" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector2" to="alarm_player" method="_on_room_entrance_detector_2_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector2" to="AlarmOverlay" method="_on_room_entrance_detector_2_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector2" to="Timer" method="_on_room_entrance_detector_2_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector" to="AlarmOverlay" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector" to="Timer" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector3" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector3" to="Timer" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay/room_entrance_detector3" to="AlarmOverlay2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="timeout" from="Timer" to="AlarmOverlay" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="AlarmOverlay2" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="AlarmOverlay3" method="_on_timer_timeout"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector" to="Timer" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay2/room_entrance_detector" to="AlarmOverlay2" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="alarm_player" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="Timer" method="_on_room_entrance_detector_body_entered"]
+[connection signal="body_entered" from="AlarmOverlay3/room_entrance_detector" to="AlarmOverlay3" method="_on_room_entrance_detector_body_entered"]
+[connection signal="portal_entered" from="Portal_entrance" to="playernode" method="_on_portal_entrance_portal_entered"]
+[connection signal="portal_entered" from="Portal_entrance2" to="playernode" method="_on_portal_entrance_2_portal_entered"]
+[connection signal="portal_entered" from="Portal_entrance3" to="playernode" method="_on_portal_entrance_3_portal_entered"]
+[connection signal="portal_entered" from="Portal_entrance4" to="playernode" method="_on_portal_entrance_4_portal_entered"]
+[connection signal="portal_entered" from="Portal_entrance5" to="playernode" method="_on_portal_entrance_5_portal_entered"]

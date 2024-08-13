@@ -117,3 +117,19 @@ func _on_horizontal_patrolling_enemy_8_player_captured():
 
 func _on_vertical_patrolling_enemy_12_player_captured():
 	death() # Replace with function body.
+
+
+func _on_portal_entrance_2_portal_entered():
+	position = $"../portal_exit2".position  # Replace with function body.
+
+
+func _on_portal_entrance_3_portal_entered():
+	position = $"../portal_exit3".position  # Replace with function body.
+
+
+func _on_portal_entrance_4_portal_entered():
+	position = $"../portal_exit4".position  # Replace with function body.
+
+
+func _on_portal_entrance_5_portal_entered():
+	position = $"../portal_exit5".position  # Replace with function body.
