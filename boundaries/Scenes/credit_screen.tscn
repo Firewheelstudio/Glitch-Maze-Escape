@@ -14,7 +14,7 @@ text = "Rick Vegas - Game Design
 David Daniels (davedalus6) - programmer
 Valep(Ne_Lepo) - programmer
 Mike Rock (mrock724) - programmer
-Jaedablea - original sprite artist"
+Jaedablea - animator (no association with tileset)"
 
 [node name="BackButton" type="Button" parent="."]
 offset_left = 430.0
