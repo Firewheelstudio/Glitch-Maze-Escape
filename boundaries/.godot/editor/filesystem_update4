@@ -3,5 +3,4 @@ res://Scripts/nextscenechanger.gd
 res://Scenes/level_3.tscn
 res://Scenes/level_2.tscn
 res://Scenes/level_1.tscn
-res://Scripts/horizontal_patrolling_enemy.gd
 res://Scenes/horizontal_patrolling_enemy.tscn
