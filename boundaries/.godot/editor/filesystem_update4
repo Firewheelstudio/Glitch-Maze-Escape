@@ -1,12 +1,12 @@
-res://Scenes/horizontal_patrolling_enemy.tscn
-res://Scripts/nextscenechanger.gd
-res://Scenes/vertical_patrolling_enemy.tscn
 res://Scenes/portal_entrance.tscn
+res://Scripts/nextscenechanger.gd
 res://Scenes/dungeon_tilemap.tscn
 res://Scenes/portal_exit.tscn
+res://Scenes/vertical_patrolling_enemy.tscn
+res://Scenes/horizontal_patrolling_enemy.tscn
 res://Scenes/level_2.tscn
 res://Scenes/level_3.tscn
-res://Scenes/level_4.tscn
 res://Scenes/credit_screen.tscn
 res://Scenes/level_1.tscn
 res://Scenes/start_menu.tscn
+res://Scripts/CanvasLayer.gd
