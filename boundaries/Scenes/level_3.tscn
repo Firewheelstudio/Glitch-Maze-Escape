@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://bqgug45jsb1io"]
+[gd_scene load_steps=42 format=3 uid="uid://bqgug45jsb1io"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_i0q0v"]
 [ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="2_n0vk6"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dys0qeupo4xym" path="res://Scenes/alarm_overlay_timer.tscn" id="17_ahbc0"]
 [ext_resource type="PackedScene" uid="uid://5kce1uniqhvi" path="res://Scenes/portal_entrance.tscn" id="18_08opo"]
 [ext_resource type="PackedScene" uid="uid://o0cba7b2chn3" path="res://Scenes/portal_exit.tscn" id="19_pw3b6"]
+[ext_resource type="PackedScene" uid="uid://bcve2gss22sxo" path="res://Scenes/lose_screen.tscn" id="20_3bbpn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b33ty"]
 
@@ -197,26 +198,26 @@ text = "The mystery only seemed to deepen with the alarms in the air. "
 metadata/_edit_use_anchors_ = true
 
 [node name="Label3" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 986.0
-offset_top = 809.0
-offset_right = 1308.0
-offset_bottom = 832.0
+offset_left = 224.0
+offset_top = 102.0
+offset_right = 589.0
+offset_bottom = 125.0
 text = "You lost, never knowing what they were hiding."
 metadata/_edit_use_anchors_ = true
 
 [node name="end_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 1154.0
-offset_top = 891.0
-offset_right = 1242.0
-offset_bottom = 922.0
+offset_left = 392.0
+offset_top = 184.0
+offset_right = 480.0
+offset_bottom = 215.0
 text = "end"
 metadata/_edit_use_anchors_ = true
 
 [node name="level_select_button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 1085.0
-offset_top = 946.0
-offset_right = 1179.0
-offset_bottom = 977.0
+offset_left = 323.0
+offset_top = 239.0
+offset_right = 417.0
+offset_bottom = 270.0
 text = "level select"
 metadata/_edit_use_anchors_ = true
 
@@ -415,6 +416,8 @@ position = Vector2(4435, -7882)
 
 [node name="portal_exit5" parent="." instance=ExtResource("19_pw3b6")]
 position = Vector2(1792, -13002)
+
+[node name="lose_screen" parent="." instance=ExtResource("20_3bbpn")]
 
 [connection signal="body_entered" from="winnode/Area2D" to="winnode" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="AlarmOverlay/room_entrance_detector2" to="alarm_player" method="_on_room_entrance_detector_2_body_entered"]

@@ -34,8 +34,8 @@ func _on_vertical_patrolling_enemy_13_player_captured():
 	pass # Replace with function body.
 
 
-func _on_level_select_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/level_select.tscn") # Replace with function body.
+#func _on_level_select_button_pressed():
+#	get_tree().change_scene_to_file("res://Scenes/level_select.tscn") # Replace with function body.
 
 
 func _on_end_button_pressed():
