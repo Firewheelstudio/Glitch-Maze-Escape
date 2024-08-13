@@ -260,6 +260,7 @@ rotation = 3.04724
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="vertical_patrolling_enemy3" parent="." instance=ExtResource("10_dhhp6")]
 position = Vector2(2695, -13269)
