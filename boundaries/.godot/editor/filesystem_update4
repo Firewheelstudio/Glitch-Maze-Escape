@@ -9,4 +9,4 @@ res://Scenes/level_3.tscn
 res://Scenes/credit_screen.tscn
 res://Scenes/level_1.tscn
 res://Scenes/start_menu.tscn
-res://Scripts/CanvasLayer.gd
+res://Scenes/player.tscn
