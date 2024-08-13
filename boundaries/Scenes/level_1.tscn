@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://ce0wm4o0ayrj0"]
+[gd_scene load_steps=44 format=3 uid="uid://ce0wm4o0ayrj0"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_5nwrf"]
 [ext_resource type="PackedScene" uid="uid://bwvwbo6gnmn0c" path="res://Scenes/dungeon_tilemap.tscn" id="2_pi16v"]
@@ -22,6 +22,8 @@
 [ext_resource type="AudioStream" uid="uid://k8pgm5174f8g" path="res://Music/level_music.mp3" id="20_8nfea"]
 [ext_resource type="AudioStream" uid="uid://dvxt1htsrfoyv" path="res://Music/alarm-26718.wav" id="21_etm4l"]
 [ext_resource type="Script" path="res://Scripts/alarm_player.gd" id="21_sphia"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cll2x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yen1x"]
 atlas = ExtResource("14_vn21h")
@@ -185,14 +187,15 @@ zoom = Vector2(0.25, 0.25)
 script = ExtResource("6_615l3")
 
 [node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 274.0
-offset_top = 315.0
-offset_right = 1346.0
-offset_bottom = 486.0
+offset_left = 66.0
+offset_top = 80.0
+offset_right = 1138.0
+offset_bottom = 251.0
 theme_override_font_sizes/font_size = 40
 text = "You've lived your life in a walled garden but
 they forgot to close the door. What will you do? 
 Where will you go?"
+label_settings = SubResource("LabelSettings_cll2x")
 
 [node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
 offset_left = -45.0

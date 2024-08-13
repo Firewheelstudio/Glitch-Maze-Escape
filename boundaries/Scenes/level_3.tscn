@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bqgug45jsb1io"]
+[gd_scene load_steps=33 format=3 uid="uid://bqgug45jsb1io"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_i0q0v"]
 [ext_resource type="PackedScene" uid="uid://c4grbpjhiwvmk" path="res://Scenes/player.tscn" id="2_n0vk6"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://da621otpkd3wm" path="res://sprites and tiles/Animated sprites/arrows/yellow arrow/arrow concept yellow.png" id="9_yqibn"]
 [ext_resource type="PackedScene" uid="uid://dk0hscnisbwn8" path="res://Scenes/vertical_patrolling_enemy.tscn" id="10_dhhp6"]
 [ext_resource type="PackedScene" uid="uid://vxbp0b18ycsg" path="res://Scenes/horizontal_patrolling_enemy.tscn" id="11_a0eyo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b33ty"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_82cxc"]
 size = Vector2(491.5, 377)
@@ -168,12 +170,13 @@ zoom = Vector2(0.25, 0.25)
 script = ExtResource("4_6pqmu")
 
 [node name="Label" type="Label" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 244.0
-offset_top = 466.0
-offset_right = 2016.0
-offset_bottom = 579.0
+offset_left = 87.0
+offset_top = 98.0
+offset_right = 1859.0
+offset_bottom = 211.0
 theme_override_font_sizes/font_size = 40
 text = "What was this place and why had they been hiding this?"
+label_settings = SubResource("LabelSettings_b33ty")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
