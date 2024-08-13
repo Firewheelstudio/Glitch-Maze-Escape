@@ -133,3 +133,47 @@ func _on_portal_entrance_4_portal_entered():
 
 func _on_portal_entrance_5_portal_entered():
 	position = $"../portal_exit5".position  # Replace with function body.
+
+
+func _on_vertical_patrolling_enemy_10_player_captured():
+	death() # Replace with function body.
+
+
+func _on_vertical_patrolling_enemy_11_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_10_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_9_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_11_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_7_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_12_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_13_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_14_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_15_player_captured():
+	death() # Replace with function body.
+
+
+func _on_horizontal_patrolling_enemy_16_player_captured():
+	death() # Replace with function body.

@@ -1,8 +1,7 @@
-res://Scripts/checpointmanager.gd
-res://Scenes/level_1.tscn
+res://Scripts/player.gd
+res://Scenes/level_3.tscn
 res://Scripts/nextscenechanger.gd
 res://Scenes/start_menu.tscn
-res://Scenes/level_3.tscn
 res://Scenes/level_2.tscn
-res://Scripts/lose_screen.gd
-res://Scripts/level.gd
+res://Scenes/level_1.tscn
+res://Scenes/enemy_node.tscn
