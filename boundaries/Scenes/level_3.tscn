@@ -244,6 +244,7 @@ rotation = 2.79346
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="YellowArrow4" type="AnimatedSprite2D" parent="."]
 position = Vector2(1319, -1898)
@@ -251,6 +252,7 @@ rotation = 3.04724
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="vertical_patrolling_enemy3" parent="." instance=ExtResource("10_dhhp6")]
 position = Vector2(2695, -13269)
@@ -318,6 +320,7 @@ rotation = 2.79346
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="YellowArrow6" type="AnimatedSprite2D" parent="."]
 position = Vector2(4542, -11469)
@@ -325,6 +328,7 @@ rotation = 2.79346
 scale = Vector2(1, 1.032)
 skew = -0.142264
 sprite_frames = SubResource("SpriteFrames_w01cx")
+autoplay = "default"
 
 [node name="horizontal_patrolling_enemy16" parent="." instance=ExtResource("11_a0eyo")]
 position = Vector2(975, -2703)
