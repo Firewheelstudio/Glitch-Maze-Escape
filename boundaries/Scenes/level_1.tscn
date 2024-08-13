@@ -305,6 +305,7 @@ autoplay = "default"
 position = Vector2(7155, -1883)
 rotation = -1.79594
 sprite_frames = SubResource("SpriteFrames_15obw")
+autoplay = "default"
 
 [node name="vertical_patrolling_enemy7" parent="." instance=ExtResource("8_cxidv")]
 position = Vector2(6467, 94)

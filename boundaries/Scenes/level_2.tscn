@@ -245,6 +245,7 @@ position = Vector2(3545, -493)
 position = Vector2(4318, 1115)
 rotation = -1.09679
 sprite_frames = SubResource("SpriteFrames_ewbfy")
+autoplay = "default"
 
 [node name="YellowArrow2" type="AnimatedSprite2D" parent="YellowArrow2"]
 position = Vector2(1143.48, -570.897)
