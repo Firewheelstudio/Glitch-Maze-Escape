@@ -1,4 +1,6 @@
+Button
 AudioStreamPlayer
+TextureRect
 Node2D
 Label
 CanvasLayer
@@ -6,9 +8,7 @@ CollisionShape2D
 Area2D
 Marker2D
 Sprite2D
-TextureRect
 AnimatedSprite2D
 ParallaxBackground
-Button
 MenuBar
 CharacterBody2D

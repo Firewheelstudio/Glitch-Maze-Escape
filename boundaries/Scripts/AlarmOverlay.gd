@@ -1,5 +1,6 @@
 extends Sprite2D
 
+var can_modulate = true
 var alarm_active = false
 var modulate_dir = 0.001
 # Called when the node enters the scene tree for the first time.
@@ -9,7 +10,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if alarm_active:
+	if Engine.time_scale == 0:
+		can_modulate = false
+	if alarm_active && can_modulate:
 		modulate.a += modulate_dir
 
 

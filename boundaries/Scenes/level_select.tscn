@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dpgkrtwsvyivo"]
+[gd_scene load_steps=4 format=3 uid="uid://dpgkrtwsvyivo"]
 
 [ext_resource type="Script" path="res://Scripts/level_select.gd" id="1_7e1ug"]
+[ext_resource type="AudioStream" uid="uid://bgah1faqpv03t" path="res://Music/title_music.mp3" id="2_oak5h"]
+[ext_resource type="Texture2D" uid="uid://ca5qk13wy0yln" path="res://backgrounds/tilescreenbackground.jpg" id="3_goldd"]
 
 [node name="level_select" type="Control"]
 layout_mode = 3
@@ -10,6 +12,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7e1ug")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_oak5h")
+volume_db = -22.355
+autoplay = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1037.0
+offset_bottom = 676.0
+texture = ExtResource("3_goldd")
 
 [node name="MenuBar" type="MenuBar" parent="."]
 layout_mode = 0
@@ -42,6 +55,16 @@ offset_right = 72.0
 offset_bottom = 111.0
 text = "level 3"
 
+[node name="backButton" type="Button" parent="MenuBar"]
+layout_mode = 0
+offset_left = 962.0
+offset_top = 633.0
+offset_right = 1007.0
+offset_bottom = 664.0
+text = "back
+"
+
 [connection signal="pressed" from="MenuBar/level1Button" to="." method="_on_level_1_button_pressed"]
 [connection signal="pressed" from="MenuBar/level2Button" to="." method="_on_level_2_button_pressed"]
 [connection signal="pressed" from="MenuBar/level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="MenuBar/backButton" to="." method="_on_back_button_pressed"]

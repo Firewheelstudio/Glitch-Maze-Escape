@@ -94,14 +94,6 @@ offset_bottom = 579.0
 theme_override_font_sizes/font_size = 40
 text = "What if we didn't always do what was right?"
 
-[node name="Button" type="Button" parent="playernode/Camera2D/CanvasLayer"]
-offset_left = 791.0
-offset_top = 310.0
-offset_right = 1088.0
-offset_bottom = 423.0
-theme_override_font_sizes/font_size = 40
-text = "ok"
-
 [node name="Label2" type="Label" parent="playernode/Camera2D/CanvasLayer"]
 offset_left = 236.0
 offset_top = 549.0
@@ -177,6 +169,5 @@ sprite_frames = SubResource("SpriteFrames_e7lbe")
 animation = &"glitch"
 autoplay = "glitch"
 
-[connection signal="button_down" from="playernode/Camera2D/CanvasLayer/Button" to="playernode/Camera2D/CanvasLayer" method="_on_button_button_down"]
 [connection signal="body_entered" from="easy_winnode/Area2D" to="easy_winnode" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="winnode/Area2D" to="winnode" method="_on_area_2d_body_entered"]

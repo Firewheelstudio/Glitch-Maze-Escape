@@ -75,6 +75,7 @@ func death():
 	$Camera2D/CanvasLayer/Label3.show()
 	$Camera2D/CanvasLayer/end_button.show()
 	$Camera2D/CanvasLayer/level_select_button.show()
+	Engine.time_scale = 0
 func respawn():
 	global_position = placetorespawn
 	$Camera2D/CanvasLayer/Label3.hide()
@@ -82,6 +83,7 @@ func respawn():
 	$Camera2D/CanvasLayer/level_select_button.hide()
 	canmove = true
 	velocity = Vector2.ZERO
+	Engine.time_scale = 1
 
 
 func _on_vertical_patrolling_enemy_3_player_captured():
