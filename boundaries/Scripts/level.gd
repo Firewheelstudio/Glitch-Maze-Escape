@@ -3,7 +3,7 @@ extends Node2D
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
-		get_tree().quit()
+		get_tree().change_scene_to_file("res://Scenes/start_menu.tscn")
 
 
 func _on_horizontal_patrolling_enemy_4_player_captured():

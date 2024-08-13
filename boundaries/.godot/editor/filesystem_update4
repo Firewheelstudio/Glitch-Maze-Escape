@@ -11,3 +11,15 @@ res://Scenes/level_1.tscn
 res://Scenes/start_menu.tscn
 res://Scenes/player.tscn
 res://Scenes/level_select.tscn
+res://Scripts/level_select.gd
+res://Scripts/start_menu.gd
+res://Scripts/Hard_win_screen.gd
+res://Scripts/win_screen.gd
+res://Scenes/easy_win_screen.tscn
+res://Scenes/hard_win_screen.tscn
+res://Scripts/level.gd
+res://Scripts/player.gd
+res://Scripts/lose_screen.gd
+res://Scenes/lose_screen.tscn
+res://Scripts/credit_screen.gd
+res://Scenes/level_4.tscn

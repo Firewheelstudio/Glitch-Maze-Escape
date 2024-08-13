@@ -6,20 +6,20 @@
 script = ExtResource("1_frii8")
 
 [node name="Credits" type="Label" parent="."]
-offset_left = 450.0
-offset_top = 181.0
-offset_right = 490.0
-offset_bottom = 204.0
+offset_left = 47.0
+offset_top = 43.0
+offset_right = 367.0
+offset_bottom = 229.0
 text = "Rick Vegas - Game Design
 David Daniels (davedalus6) - programmer
 Valep(Ne_Lepo) - programmer
-Everybody give yourself a name"
+Mike Rock (mrock724) - programmer"
 
 [node name="BackButton" type="Button" parent="."]
-offset_left = 1634.0
-offset_top = 942.0
-offset_right = 1764.0
-offset_bottom = 1005.0
+offset_left = 430.0
+offset_top = 239.0
+offset_right = 560.0
+offset_bottom = 302.0
 text = "back"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

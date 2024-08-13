@@ -1,7 +1,7 @@
 extends CharacterBody2D
 var speed = 800
 var accel = 1500
-var canmove = false
+var canmove = true
 
 func _on_portal_entrance_portal_entered():
 	position = $"../portal_exit".position 
@@ -9,6 +9,7 @@ func _on_portal_entrance_portal_entered():
 
 var placetorespawn  #it contains coords of current checpoint
 func _ready():
+	placetorespawn = global_position
 	$Camera2D/CanvasLayer/Label3.hide()
 	$Camera2D/CanvasLayer/end_button.hide()
 	$Camera2D/CanvasLayer/level_select_button.hide()

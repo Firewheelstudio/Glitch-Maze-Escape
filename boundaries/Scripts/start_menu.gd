@@ -9,6 +9,10 @@ func _ready():
 func _process(delta):
 	pass
 
+func _unhandled_key_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_quit()
+
 func level_select():
 	get_tree().change_scene_to_file("res://Scenes/level_select.tscn")
 

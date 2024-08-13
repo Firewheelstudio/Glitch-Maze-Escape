@@ -13,34 +13,35 @@ script = ExtResource("1_aoukx")
 
 [node name="EndButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 913.0
-offset_top = 518.0
-offset_right = 1115.0
-offset_bottom = 592.0
+offset_left = 375.316
+offset_top = 199.0
+offset_right = 577.316
+offset_bottom = 273.0
 text = "End"
 
 [node name="TitleButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 577.0
-offset_top = 518.0
-offset_right = 737.0
-offset_bottom = 582.0
+offset_left = 39.316
+offset_top = 199.0
+offset_right = 199.316
+offset_bottom = 263.0
 text = "Back to title"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 611.0
-offset_top = 336.0
-offset_right = 1280.0
-offset_bottom = 359.0
+offset_left = 81.0
+offset_top = 66.0
+offset_right = 560.0
+offset_bottom = 140.0
 text = "You made it out of the greenhouse and into the server room. now everything is on fire."
+autowrap_mode = 2
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 573.684
-offset_top = 629.652
-offset_right = 581.684
-offset_bottom = 637.652
+offset_left = 36.0
+offset_top = 310.652
+offset_right = 130.0
+offset_bottom = 341.652
 text = "level select"
 
 [connection signal="pressed" from="EndButton" to="." method="_on_end_button_pressed"]

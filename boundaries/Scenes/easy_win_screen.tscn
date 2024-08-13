@@ -13,8 +13,10 @@ script = ExtResource("1_d02oj")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -596.0
+offset_top = -337.0
+offset_right = -326.0
+offset_bottom = -236.0
 text = "You escaped into nature, congrats! 
 But what else was there to see? 
 What could they have been hiding? 

@@ -7,7 +7,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_lfr60"]
 font = ExtResource("4_aew3g")
-font_size = 82
+font_size = 48
 font_color = Color(0, 0, 1, 1)
 shadow_size = 4
 shadow_color = Color(0.992157, 0, 0, 1)
@@ -23,8 +23,8 @@ script = ExtResource("1_cwyjk")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1465.0
-offset_bottom = 731.0
+offset_right = 640.0
+offset_bottom = 360.0
 texture = ExtResource("2_1f11x")
 
 [node name="MenuBar" type="MenuBar" parent="."]
@@ -39,10 +39,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.006
 anchor_bottom = 12.606
-offset_left = 271.0
-offset_top = 207.0
-offset_right = -753.24
-offset_bottom = -238.24
+offset_left = -269.0
+offset_top = -10.0
+offset_right = -1269.24
+offset_bottom = -455.24
 text = "Play the Game"
 
 [node name="CloseButton" type="Button" parent="MenuBar"]
@@ -50,10 +50,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.006
 anchor_bottom = 12.606
-offset_left = 761.0
-offset_top = 212.0
-offset_right = -263.24
-offset_bottom = -233.24
+offset_left = 221.0
+offset_top = -5.0
+offset_right = -803.24
+offset_bottom = -450.24
 text = "Exit"
 
 [node name="CreditsButton" type="Button" parent="MenuBar"]
@@ -61,18 +61,18 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 28.006
 anchor_bottom = 12.606
-offset_left = 529.0
-offset_top = 213.0
-offset_right = -495.24
-offset_bottom = -232.24
+offset_left = -11.0
+offset_top = -4.0
+offset_right = -1035.24
+offset_bottom = -449.24
 text = "credits"
 
 [node name="levelselectbutton" type="Button" parent="MenuBar"]
 layout_mode = 0
-offset_left = 277.0
-offset_top = 322.0
-offset_right = 371.0
-offset_bottom = 353.0
+offset_left = -263.0
+offset_top = 105.0
+offset_right = -169.0
+offset_bottom = 136.0
 text = "level select
 "
 
@@ -83,10 +83,10 @@ autoplay = true
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 297.0
-offset_top = 228.0
-offset_right = 1144.0
-offset_bottom = 322.0
+offset_left = 75.0
+offset_top = 69.0
+offset_right = 579.0
+offset_bottom = 127.0
 text = "A bug in the system"
 label_settings = SubResource("LabelSettings_lfr60")
 

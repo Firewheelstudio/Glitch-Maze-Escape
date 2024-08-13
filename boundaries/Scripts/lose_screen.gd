@@ -15,4 +15,5 @@ func _on_end_button_button_down():
 	$"../playernode".respawn()
 
 func _on_level_select_button_button_down():
+	$"../playernode".respawn()
 	get_tree().change_scene_to_file("res://Scenes/level_select.tscn") # Replace with function body.

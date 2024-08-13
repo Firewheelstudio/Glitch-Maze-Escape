@@ -14,6 +14,9 @@ func _process(delta):
 func _on_end_button_pressed():
 	get_tree().quit() # Replace with function body.
 
+func _unhandled_key_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_cancel"):
+		_on_title_button_pressed()
 
 func _on_title_button_pressed():
 	get_tree().change_scene_to_file("res://Scenes/start_menu.tscn") # Replace with function body.
